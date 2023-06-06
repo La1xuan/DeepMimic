@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_bottomRightCorner_int_int.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GitRepos\DeepMimic\eigen-3.3.7\doc\snippets\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{252313FC-FA98-38E5-BA05-E86925BCE1BC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

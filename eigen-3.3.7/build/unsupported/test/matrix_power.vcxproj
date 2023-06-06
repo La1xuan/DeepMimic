@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3B293E0C-63C2-3168-A819-464D12879325}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>matrix_power</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\test;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\unsupported;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\Eigen;C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\test;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\unsupported;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\Eigen;C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\test;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\unsupported;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\Eigen;C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\test;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\unsupported;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\..\..\Eigen;C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\test\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindAdolc.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindFFTW.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGLEW.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGMP.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGoogleHash.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindMPFR.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindAdolc.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindFFTW.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGLEW.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGMP.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGoogleHash.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindMPFR.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindAdolc.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindFFTW.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGLEW.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGMP.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGoogleHash.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindMPFR.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindAdolc.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindFFTW.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGLEW.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGMP.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindGoogleHash.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindMPFR.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\ZERO_CHECK.vcxproj">
+      <Project>{EFEA8FAC-BB9B-3250-9DBD-FC51A1D450F6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_1.vcxproj">
+      <Project>{C58F9934-02C5-3CAE-BA15-B67C7434A2BC}</Project>
+      <Name>matrix_power_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_10.vcxproj">
+      <Project>{EC9A2540-B19B-3F99-ABF9-23407F0E9C12}</Project>
+      <Name>matrix_power_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_11.vcxproj">
+      <Project>{CC696EEC-9440-33A9-A172-A37AE545C083}</Project>
+      <Name>matrix_power_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_12.vcxproj">
+      <Project>{A7A2B87A-164F-3314-9FEE-057D8DB06CC6}</Project>
+      <Name>matrix_power_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_2.vcxproj">
+      <Project>{30C4DB7F-9A9E-3F15-ABB3-87D622BBEE50}</Project>
+      <Name>matrix_power_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_3.vcxproj">
+      <Project>{59CB9533-590F-3D12-839E-B117772BC6F8}</Project>
+      <Name>matrix_power_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_4.vcxproj">
+      <Project>{129EB843-DD5A-31B1-AD5D-E92A7639E5F5}</Project>
+      <Name>matrix_power_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_5.vcxproj">
+      <Project>{BB2AD1D1-E353-3948-B833-B20B678D3141}</Project>
+      <Name>matrix_power_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_6.vcxproj">
+      <Project>{2B52D2D9-BE23-3DAB-98B1-EAD2445B1562}</Project>
+      <Name>matrix_power_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_7.vcxproj">
+      <Project>{37ED4AF2-F584-34BA-95A9-BEA9A57C95CF}</Project>
+      <Name>matrix_power_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_8.vcxproj">
+      <Project>{4C82DEFA-2E6A-3330-A742-C40EBE090DD3}</Project>
+      <Name>matrix_power_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\unsupported\test\matrix_power_9.vcxproj">
+      <Project>{721D5AEA-5423-3056-AA47-9D1D51A97CBF}</Project>
+      <Name>matrix_power_9</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

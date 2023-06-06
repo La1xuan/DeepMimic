@@ -9,6 +9,10 @@
 
 const int gInvalidIdx = -1;
 
+//Wangyi in MathUtil.h
+#define M_PI 3.14159265358979323846
+//end Wangyi
+// 
 // for convenience define standard vector for rendering
 typedef Eigen::Vector4d tVector;
 typedef Eigen::Vector4d tVector3;

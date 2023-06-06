@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="examples">
+      <UniqueIdentifier>{10969AEC-A559-AE44-9B23-B16AEDFEBC5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\RobotSimulator">
+      <UniqueIdentifier>{542B72B9-0AD5-2748-8CF8-A6F65895F407}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\examples\RobotSimulator\HelloBulletRobotics.cpp">
+      <Filter>examples\RobotSimulator</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

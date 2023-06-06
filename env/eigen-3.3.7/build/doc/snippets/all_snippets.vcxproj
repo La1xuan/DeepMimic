@@ -1,0 +1,1265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B0E46BB0-8D04-3A78-BC3B-6DD0BADD221A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>all_snippets</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\snippets;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\snippets;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\snippets;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\snippets;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GitRepos\DeepMimic\eigen-3.3.7\doc\snippets\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/doc/snippets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/doc/snippets/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\doc\snippets\compile_snippet.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/doc/snippets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/doc/snippets/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\doc\snippets\compile_snippet.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/doc/snippets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/doc/snippets/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\doc\snippets\compile_snippet.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/doc/snippets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/doc/snippets/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\doc\snippets\compile_snippet.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\ZERO_CHECK.vcxproj">
+      <Project>{EFEA8FAC-BB9B-3250-9DBD-FC51A1D450F6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_AngleAxis_mimic_euler.vcxproj">
+      <Project>{77D4E764-8812-3E2D-B4E1-E1CA39007DDF}</Project>
+      <Name>compile_AngleAxis_mimic_euler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_BiCGSTAB_simple.vcxproj">
+      <Project>{1CED61F9-FFAE-35AA-8170-4BC48EE350E1}</Project>
+      <Name>compile_BiCGSTAB_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_BiCGSTAB_step_by_step.vcxproj">
+      <Project>{51A637D8-A709-3E07-BE58-A2B6E283495A}</Project>
+      <Name>compile_BiCGSTAB_step_by_step</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_ColPivHouseholderQR_solve.vcxproj">
+      <Project>{38C11FE2-CD74-3048-82E9-2C2C1E76E602}</Project>
+      <Name>compile_ColPivHouseholderQR_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_ComplexEigenSolver_compute.vcxproj">
+      <Project>{1FBD2CC4-E8EC-3E9A-A716-E7A12031FD17}</Project>
+      <Name>compile_ComplexEigenSolver_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_ComplexEigenSolver_eigenvalues.vcxproj">
+      <Project>{3956A784-5F65-3D84-B998-5245D6EC14A9}</Project>
+      <Name>compile_ComplexEigenSolver_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_ComplexEigenSolver_eigenvectors.vcxproj">
+      <Project>{46709F35-D652-328A-BF7D-D1FA40F50800}</Project>
+      <Name>compile_ComplexEigenSolver_eigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_ComplexSchur_compute.vcxproj">
+      <Project>{0CF8FE4F-24AC-39C3-BB83-E3A184A768E5}</Project>
+      <Name>compile_ComplexSchur_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_ComplexSchur_matrixT.vcxproj">
+      <Project>{A97C9A1B-D2F8-343E-B69E-F20359D9424E}</Project>
+      <Name>compile_ComplexSchur_matrixT</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_ComplexSchur_matrixU.vcxproj">
+      <Project>{BDD7435F-207C-3102-90DB-50C5011599B6}</Project>
+      <Name>compile_ComplexSchur_matrixU</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_abs.vcxproj">
+      <Project>{716C1DC7-5560-3A03-BEE9-409B867A4408}</Project>
+      <Name>compile_Cwise_abs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_abs2.vcxproj">
+      <Project>{C877775F-1B3F-3979-B15F-248710E6CB3D}</Project>
+      <Name>compile_Cwise_abs2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_acos.vcxproj">
+      <Project>{08FB68B3-FB4E-399F-8CE2-B879A69ACBF0}</Project>
+      <Name>compile_Cwise_acos</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_arg.vcxproj">
+      <Project>{743F10AF-785D-306A-ADA0-BC90A458A8FB}</Project>
+      <Name>compile_Cwise_arg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_array_power_array.vcxproj">
+      <Project>{C1F6760F-279E-3D8A-9867-8EFE79832433}</Project>
+      <Name>compile_Cwise_array_power_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_asin.vcxproj">
+      <Project>{6882A467-D814-31AE-A9AF-419425746589}</Project>
+      <Name>compile_Cwise_asin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_atan.vcxproj">
+      <Project>{17D379FF-A470-3EA7-941C-9D7E15F0AEBF}</Project>
+      <Name>compile_Cwise_atan</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_boolean_and.vcxproj">
+      <Project>{901FBC27-0ECC-3169-A580-8D3214D6F02E}</Project>
+      <Name>compile_Cwise_boolean_and</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_boolean_not.vcxproj">
+      <Project>{D940B1C9-2B19-3827-B471-DE6027C38BCD}</Project>
+      <Name>compile_Cwise_boolean_not</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_boolean_or.vcxproj">
+      <Project>{18D39F3E-75D5-326F-84CB-542BEA3AB15F}</Project>
+      <Name>compile_Cwise_boolean_or</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_boolean_xor.vcxproj">
+      <Project>{BA440E92-925B-33BF-A56F-C2EA81427403}</Project>
+      <Name>compile_Cwise_boolean_xor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_ceil.vcxproj">
+      <Project>{79CA5E59-E2B1-38E1-879D-B1F3F101E5DC}</Project>
+      <Name>compile_Cwise_ceil</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_cos.vcxproj">
+      <Project>{5AD06012-EDAF-309D-A52A-4AC65B0BE35F}</Project>
+      <Name>compile_Cwise_cos</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_cosh.vcxproj">
+      <Project>{6AED67D0-88F0-381F-BFE4-438E82AB2F99}</Project>
+      <Name>compile_Cwise_cosh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_cube.vcxproj">
+      <Project>{2E4FD09D-E049-3A4C-928B-DC15B9C3A992}</Project>
+      <Name>compile_Cwise_cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_equal_equal.vcxproj">
+      <Project>{B1FA2D2C-E4A9-30D2-A950-B1A0CDF9F2ED}</Project>
+      <Name>compile_Cwise_equal_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_exp.vcxproj">
+      <Project>{A7C3B298-9316-3BE0-A01D-FB22CD2500D7}</Project>
+      <Name>compile_Cwise_exp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_floor.vcxproj">
+      <Project>{EAB9AB66-26F9-3D98-9A2B-EEF0B0A77094}</Project>
+      <Name>compile_Cwise_floor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_greater.vcxproj">
+      <Project>{9D1509AA-789C-3A17-A466-D9CE090FD57D}</Project>
+      <Name>compile_Cwise_greater</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_greater_equal.vcxproj">
+      <Project>{58A8C9EF-9CC4-3EC4-8575-BF9A37326C33}</Project>
+      <Name>compile_Cwise_greater_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_inverse.vcxproj">
+      <Project>{F98AE9DE-296E-3BDC-BFDA-4683A4CFE42E}</Project>
+      <Name>compile_Cwise_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_isFinite.vcxproj">
+      <Project>{E86DF450-B62A-35C2-A1AC-80845291DD0C}</Project>
+      <Name>compile_Cwise_isFinite</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_isInf.vcxproj">
+      <Project>{9D3E5E22-9EF9-3471-92F2-B17A7FF2F2B4}</Project>
+      <Name>compile_Cwise_isInf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_isNaN.vcxproj">
+      <Project>{4748B0C4-8BC7-3BBE-A04A-263003217E9C}</Project>
+      <Name>compile_Cwise_isNaN</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_less.vcxproj">
+      <Project>{D3D99ADA-0412-3D95-8D13-D806B8E5A155}</Project>
+      <Name>compile_Cwise_less</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_less_equal.vcxproj">
+      <Project>{3C17CDD9-919B-3B51-BF57-103C089E1A35}</Project>
+      <Name>compile_Cwise_less_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_log.vcxproj">
+      <Project>{309C1EA3-813D-3BFF-9726-4F998D98B4F8}</Project>
+      <Name>compile_Cwise_log</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_log10.vcxproj">
+      <Project>{8F71E547-FD69-3D2E-B2DC-80A9E4BF6264}</Project>
+      <Name>compile_Cwise_log10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_max.vcxproj">
+      <Project>{C8B7C27D-67AA-3F99-BF35-A1C80BC5381B}</Project>
+      <Name>compile_Cwise_max</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_min.vcxproj">
+      <Project>{F0B85365-DBDF-3C8B-8405-939CF7DBE25D}</Project>
+      <Name>compile_Cwise_min</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_minus.vcxproj">
+      <Project>{47F0B20E-AA7B-35DC-AB96-A65A27BAD3C8}</Project>
+      <Name>compile_Cwise_minus</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_minus_equal.vcxproj">
+      <Project>{6EB6C16B-4A19-3164-9D20-1959451C93B9}</Project>
+      <Name>compile_Cwise_minus_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_not_equal.vcxproj">
+      <Project>{C1EA2FCA-097B-344A-82EA-7E0C26DE86C6}</Project>
+      <Name>compile_Cwise_not_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_plus.vcxproj">
+      <Project>{FD437FAF-A764-3DD1-AFE9-43F37DEEA152}</Project>
+      <Name>compile_Cwise_plus</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_plus_equal.vcxproj">
+      <Project>{9A3D4B1E-A07C-3F76-90B6-13ED1575DABF}</Project>
+      <Name>compile_Cwise_plus_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_pow.vcxproj">
+      <Project>{640EE719-987B-30F3-BDB0-8BECD3D2BED4}</Project>
+      <Name>compile_Cwise_pow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_product.vcxproj">
+      <Project>{0CF37CEF-82E2-34C2-A3F7-509772530F27}</Project>
+      <Name>compile_Cwise_product</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_quotient.vcxproj">
+      <Project>{7870E13A-73F9-386C-A9C7-BEAE29BE01A4}</Project>
+      <Name>compile_Cwise_quotient</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_round.vcxproj">
+      <Project>{3118B694-43CB-3C0F-9C55-D514B9312B15}</Project>
+      <Name>compile_Cwise_round</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_scalar_power_array.vcxproj">
+      <Project>{669DF8FA-10CC-360F-9A0E-1382AADC536E}</Project>
+      <Name>compile_Cwise_scalar_power_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_sign.vcxproj">
+      <Project>{A43271B6-AED3-339C-A996-A37166FF4B32}</Project>
+      <Name>compile_Cwise_sign</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_sin.vcxproj">
+      <Project>{E47EF8A1-4C82-3F99-BFE5-36F78FD34A8F}</Project>
+      <Name>compile_Cwise_sin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_sinh.vcxproj">
+      <Project>{D1B29BE6-CDC4-3105-9932-04DC216C400B}</Project>
+      <Name>compile_Cwise_sinh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_slash_equal.vcxproj">
+      <Project>{571CD5AA-1F22-3DED-9EFD-C958E12800CC}</Project>
+      <Name>compile_Cwise_slash_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_sqrt.vcxproj">
+      <Project>{51A0F42C-29B6-3E56-A469-E41E5081CB45}</Project>
+      <Name>compile_Cwise_sqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_square.vcxproj">
+      <Project>{71EAA710-5CAA-3A90-BB3A-D54CF1349C74}</Project>
+      <Name>compile_Cwise_square</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_tan.vcxproj">
+      <Project>{ED66C90E-3602-37C0-BC2E-BFE4D4914C73}</Project>
+      <Name>compile_Cwise_tan</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_tanh.vcxproj">
+      <Project>{FA3B28E8-579A-378E-A22A-79080194E87D}</Project>
+      <Name>compile_Cwise_tanh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Cwise_times_equal.vcxproj">
+      <Project>{32104AB7-A419-38EC-AE0B-7D435C5950BA}</Project>
+      <Name>compile_Cwise_times_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_DenseBase_LinSpaced.vcxproj">
+      <Project>{D4DD3AF5-A444-3969-A7A5-906B6DB25179}</Project>
+      <Name>compile_DenseBase_LinSpaced</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_DenseBase_LinSpacedInt.vcxproj">
+      <Project>{B50FAA3D-FF34-3F36-96F9-6AEA3C82544D}</Project>
+      <Name>compile_DenseBase_LinSpacedInt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_DenseBase_LinSpaced_seq.vcxproj">
+      <Project>{67320D55-16A4-38A8-AF85-175A398D425E}</Project>
+      <Name>compile_DenseBase_LinSpaced_seq</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_DenseBase_setLinSpaced.vcxproj">
+      <Project>{53FFF46E-C22F-3243-B6FF-D4F8818A7F0F}</Project>
+      <Name>compile_DenseBase_setLinSpaced</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_DirectionWise_hnormalized.vcxproj">
+      <Project>{97EAC871-EEEB-3570-8E53-C83205A9B591}</Project>
+      <Name>compile_DirectionWise_hnormalized</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_DirectionWise_replicate.vcxproj">
+      <Project>{891AACCE-53B2-34A7-9E6C-9CFFA87271D7}</Project>
+      <Name>compile_DirectionWise_replicate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_DirectionWise_replicate_int.vcxproj">
+      <Project>{A522CF89-7C53-3C7E-AB73-28C1B72F0908}</Project>
+      <Name>compile_DirectionWise_replicate_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_EigenSolver_EigenSolver_MatrixType.vcxproj">
+      <Project>{DF0A9BC1-AE98-37EF-8F35-C99DF1BF476D}</Project>
+      <Name>compile_EigenSolver_EigenSolver_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_EigenSolver_compute.vcxproj">
+      <Project>{1BDC5C8D-8CEE-3AB8-8E69-45C0889F74D0}</Project>
+      <Name>compile_EigenSolver_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_EigenSolver_eigenvalues.vcxproj">
+      <Project>{82FD90EA-EED6-3C25-AE49-E27D5590C62B}</Project>
+      <Name>compile_EigenSolver_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_EigenSolver_eigenvectors.vcxproj">
+      <Project>{03466B25-38E6-3BA3-B99A-A1033335C1C5}</Project>
+      <Name>compile_EigenSolver_eigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_EigenSolver_pseudoEigenvectors.vcxproj">
+      <Project>{DB54D970-55E1-3CED-BB3D-0826FEB519AA}</Project>
+      <Name>compile_EigenSolver_pseudoEigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_FullPivHouseholderQR_solve.vcxproj">
+      <Project>{6B2978C4-37D8-3A57-ABCA-2B557AB43F48}</Project>
+      <Name>compile_FullPivHouseholderQR_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_FullPivLU_image.vcxproj">
+      <Project>{26FE9430-A373-375A-86B3-71311E7B02D8}</Project>
+      <Name>compile_FullPivLU_image</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_FullPivLU_kernel.vcxproj">
+      <Project>{68CAE529-CCF1-36A1-AC1B-365E43F80AFF}</Project>
+      <Name>compile_FullPivLU_kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_FullPivLU_solve.vcxproj">
+      <Project>{5280B22D-A625-3A3D-A257-1DB9DCCB3DD9}</Project>
+      <Name>compile_FullPivLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_GeneralizedEigenSolver.vcxproj">
+      <Project>{ACDAD270-8572-3650-BE3A-E66227DD6E49}</Project>
+      <Name>compile_GeneralizedEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_HessenbergDecomposition_compute.vcxproj">
+      <Project>{B279D2FA-5A6E-3A30-B003-F44FA4AD20ED}</Project>
+      <Name>compile_HessenbergDecomposition_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_HessenbergDecomposition_matrixH.vcxproj">
+      <Project>{93021795-88BF-3163-BA6D-897B922955D9}</Project>
+      <Name>compile_HessenbergDecomposition_matrixH</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_HessenbergDecomposition_packedMatrix.vcxproj">
+      <Project>{259E7ED8-708A-3737-883E-3E6CEAD52F5C}</Project>
+      <Name>compile_HessenbergDecomposition_packedMatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_HouseholderQR_householderQ.vcxproj">
+      <Project>{8174E76B-DBA7-30F3-B656-4EC150591D6B}</Project>
+      <Name>compile_HouseholderQR_householderQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_HouseholderQR_solve.vcxproj">
+      <Project>{F4EFD07F-9031-31B7-9C0D-0D6699A9C53B}</Project>
+      <Name>compile_HouseholderQR_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_HouseholderSequence_HouseholderSequence.vcxproj">
+      <Project>{2669D5E8-0D0B-3E60-87DE-A465D528CA9E}</Project>
+      <Name>compile_HouseholderSequence_HouseholderSequence</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_IOFormat.vcxproj">
+      <Project>{4AC083CE-CC12-304C-9464-076DF20A39F1}</Project>
+      <Name>compile_IOFormat</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_JacobiSVD_basic.vcxproj">
+      <Project>{7B7041F0-FB96-31FA-93EF-63D52248B35F}</Project>
+      <Name>compile_JacobiSVD_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Jacobi_makeGivens.vcxproj">
+      <Project>{1C44EBF1-F02B-3913-BFA6-D72FFA117082}</Project>
+      <Name>compile_Jacobi_makeGivens</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Jacobi_makeJacobi.vcxproj">
+      <Project>{CE2CC3A7-1113-35B6-8E35-99DEC623D202}</Project>
+      <Name>compile_Jacobi_makeJacobi</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_LLT_example.vcxproj">
+      <Project>{BE9B0242-2BDE-3B60-928F-11A1087C492E}</Project>
+      <Name>compile_LLT_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_LLT_solve.vcxproj">
+      <Project>{76246F97-B5BA-3CEA-8FEB-10AE4426B9B2}</Project>
+      <Name>compile_LLT_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_LeastSquaresNormalEquations.vcxproj">
+      <Project>{764E805E-36A1-30F0-B214-5AC8CB2D9D4F}</Project>
+      <Name>compile_LeastSquaresNormalEquations</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_LeastSquaresQR.vcxproj">
+      <Project>{960AD0CB-870D-36A4-93D3-7162777F1285}</Project>
+      <Name>compile_LeastSquaresQR</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Map_general_stride.vcxproj">
+      <Project>{B5CCBEC0-8D23-3EB9-B2D3-67AA20548596}</Project>
+      <Name>compile_Map_general_stride</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Map_inner_stride.vcxproj">
+      <Project>{52F4FCE6-55AA-33DA-8C0F-8DBBE4E7AB02}</Project>
+      <Name>compile_Map_inner_stride</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Map_outer_stride.vcxproj">
+      <Project>{00831AFC-FB4B-3BBA-83C0-4434B93E6138}</Project>
+      <Name>compile_Map_outer_stride</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Map_placement_new.vcxproj">
+      <Project>{DE984CA1-01AB-368C-8A6A-C6A4787FCA9B}</Project>
+      <Name>compile_Map_placement_new</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Map_simple.vcxproj">
+      <Project>{E75B55C0-A0C9-396B-9C87-11DAB3B95350}</Project>
+      <Name>compile_Map_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_adjoint.vcxproj">
+      <Project>{EAACEC93-4150-3C14-B7B8-9759812C2EF4}</Project>
+      <Name>compile_MatrixBase_adjoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_all.vcxproj">
+      <Project>{D9E5BC49-906F-3774-9A8D-AC68CABD3073}</Project>
+      <Name>compile_MatrixBase_all</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_applyOnTheLeft.vcxproj">
+      <Project>{4F15B03F-4B8D-3FD0-8457-582E1E3B1C3D}</Project>
+      <Name>compile_MatrixBase_applyOnTheLeft</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_applyOnTheRight.vcxproj">
+      <Project>{388FD765-08E2-32F0-BF6A-5144F1B9009F}</Project>
+      <Name>compile_MatrixBase_applyOnTheRight</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_array.vcxproj">
+      <Project>{843026B8-0F4A-3DA2-9E4A-F213B0B36506}</Project>
+      <Name>compile_MatrixBase_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_array_const.vcxproj">
+      <Project>{12D41B2F-B48C-3756-A53A-BCB8C85A98A6}</Project>
+      <Name>compile_MatrixBase_array_const</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_asDiagonal.vcxproj">
+      <Project>{FE14361C-0E3C-3D87-BAAC-BE1E9B07E5F3}</Project>
+      <Name>compile_MatrixBase_asDiagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_block_int_int.vcxproj">
+      <Project>{39CA5725-2BE0-32BC-BA6B-AF5268BCCBDB}</Project>
+      <Name>compile_MatrixBase_block_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_block_int_int_int_int.vcxproj">
+      <Project>{0F533A43-2A3F-37D3-9631-CBE72111623D}</Project>
+      <Name>compile_MatrixBase_block_int_int_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_bottomLeftCorner_int_int.vcxproj">
+      <Project>{3C1DB337-01A2-372B-BB1C-721709979F30}</Project>
+      <Name>compile_MatrixBase_bottomLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_bottomRightCorner_int_int.vcxproj">
+      <Project>{640F4BAA-B1BC-3287-9857-53AC46C83414}</Project>
+      <Name>compile_MatrixBase_bottomRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_bottomRows_int.vcxproj">
+      <Project>{81D7FEEF-E679-36D0-B42B-FCAF0B8636E6}</Project>
+      <Name>compile_MatrixBase_bottomRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cast.vcxproj">
+      <Project>{C9730887-68B2-372F-99DA-1502EEEA8BA3}</Project>
+      <Name>compile_MatrixBase_cast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_col.vcxproj">
+      <Project>{133BF71F-BAC2-325D-9612-C37775151293}</Project>
+      <Name>compile_MatrixBase_col</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_colwise.vcxproj">
+      <Project>{5ADD00E1-0EC9-3D40-B83B-A1D3A81AC904}</Project>
+      <Name>compile_MatrixBase_colwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_computeInverseAndDetWithCheck.vcxproj">
+      <Project>{6A453D06-33F5-30D4-9D19-03B975D09157}</Project>
+      <Name>compile_MatrixBase_computeInverseAndDetWithCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_computeInverseWithCheck.vcxproj">
+      <Project>{ED7B6EC8-06E2-34B1-A6E8-04D7B2C5CBE6}</Project>
+      <Name>compile_MatrixBase_computeInverseWithCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cwiseAbs.vcxproj">
+      <Project>{3170EE48-E2BE-3BBB-8195-EF8E80E7B27B}</Project>
+      <Name>compile_MatrixBase_cwiseAbs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cwiseAbs2.vcxproj">
+      <Project>{F168C1AC-0756-38CA-9039-8EE2703DE156}</Project>
+      <Name>compile_MatrixBase_cwiseAbs2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cwiseEqual.vcxproj">
+      <Project>{75928CDB-372C-3FE1-834C-28BEBF023511}</Project>
+      <Name>compile_MatrixBase_cwiseEqual</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cwiseInverse.vcxproj">
+      <Project>{94333116-8ACA-3447-8F27-C2B2DB91120C}</Project>
+      <Name>compile_MatrixBase_cwiseInverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cwiseMax.vcxproj">
+      <Project>{E559CFC5-198B-3188-B9C0-33F482756B69}</Project>
+      <Name>compile_MatrixBase_cwiseMax</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cwiseMin.vcxproj">
+      <Project>{12C5746F-92F4-324E-AE92-AD6F9D5E982C}</Project>
+      <Name>compile_MatrixBase_cwiseMin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cwiseNotEqual.vcxproj">
+      <Project>{F6CE9232-5DA8-3A8F-988C-FE2C06F75435}</Project>
+      <Name>compile_MatrixBase_cwiseNotEqual</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cwiseProduct.vcxproj">
+      <Project>{0F768A08-52BA-3F30-9E2A-46F50D12893E}</Project>
+      <Name>compile_MatrixBase_cwiseProduct</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cwiseQuotient.vcxproj">
+      <Project>{C5EDF1B2-C635-3DA8-87D6-A1FAD2FFCB53}</Project>
+      <Name>compile_MatrixBase_cwiseQuotient</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cwiseSign.vcxproj">
+      <Project>{BE50C6BF-0FD9-3F80-8E9C-F7EF2D36F639}</Project>
+      <Name>compile_MatrixBase_cwiseSign</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_cwiseSqrt.vcxproj">
+      <Project>{67FF077F-B3F3-38B0-936E-AEBF56160EA1}</Project>
+      <Name>compile_MatrixBase_cwiseSqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_diagonal.vcxproj">
+      <Project>{3C2788F4-8D24-3858-87B8-34246A0430AE}</Project>
+      <Name>compile_MatrixBase_diagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_diagonal_int.vcxproj">
+      <Project>{0C4AE98D-95B8-3279-9855-75CEB542F047}</Project>
+      <Name>compile_MatrixBase_diagonal_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_diagonal_template_int.vcxproj">
+      <Project>{8FAE6AB5-C958-3585-AEE5-9D59283EAFD7}</Project>
+      <Name>compile_MatrixBase_diagonal_template_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_eigenvalues.vcxproj">
+      <Project>{92B2DFDE-691C-3AF0-824E-608B0684B06E}</Project>
+      <Name>compile_MatrixBase_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_end_int.vcxproj">
+      <Project>{F23ADE73-7452-36C8-8BF9-2AE87DF07DE7}</Project>
+      <Name>compile_MatrixBase_end_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_eval.vcxproj">
+      <Project>{B117AAB8-14D7-3851-8BDE-82ACE379FA22}</Project>
+      <Name>compile_MatrixBase_eval</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_fixedBlock_int_int.vcxproj">
+      <Project>{3F82205D-22A5-373F-94D1-4908EFBFFED0}</Project>
+      <Name>compile_MatrixBase_fixedBlock_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_hnormalized.vcxproj">
+      <Project>{6A3C874B-F3BB-3BA0-A26F-3A2156BB80DF}</Project>
+      <Name>compile_MatrixBase_hnormalized</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_homogeneous.vcxproj">
+      <Project>{9B323C0E-8561-3E5F-9B03-9DDFAB3C4717}</Project>
+      <Name>compile_MatrixBase_homogeneous</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_identity.vcxproj">
+      <Project>{738ABF9B-BDDE-3F07-88C9-E7B50201AD42}</Project>
+      <Name>compile_MatrixBase_identity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_identity_int_int.vcxproj">
+      <Project>{020A41CF-B507-3661-A5C0-5603B6F2B551}</Project>
+      <Name>compile_MatrixBase_identity_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_inverse.vcxproj">
+      <Project>{1BC3166A-A7FB-35C4-B40A-291B75831706}</Project>
+      <Name>compile_MatrixBase_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_isDiagonal.vcxproj">
+      <Project>{F773CE8B-C85D-3CFE-9F86-52FDFE4DC111}</Project>
+      <Name>compile_MatrixBase_isDiagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_isIdentity.vcxproj">
+      <Project>{5405C855-2CD9-39CC-8C58-92AA1F2C17CB}</Project>
+      <Name>compile_MatrixBase_isIdentity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_isOnes.vcxproj">
+      <Project>{6C8BA295-18EB-3712-AFD0-405DE6344AFB}</Project>
+      <Name>compile_MatrixBase_isOnes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_isOrthogonal.vcxproj">
+      <Project>{B0CA57D4-EC0A-3F6E-AC05-9C407E819851}</Project>
+      <Name>compile_MatrixBase_isOrthogonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_isUnitary.vcxproj">
+      <Project>{B12470F1-F086-3D89-BD35-001A3A257A60}</Project>
+      <Name>compile_MatrixBase_isUnitary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_isZero.vcxproj">
+      <Project>{1A55BEA9-0D32-37FB-A9B2-DBD13A2310D7}</Project>
+      <Name>compile_MatrixBase_isZero</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_leftCols_int.vcxproj">
+      <Project>{E7DF574A-0DD0-3184-9898-87C4C4589E31}</Project>
+      <Name>compile_MatrixBase_leftCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_noalias.vcxproj">
+      <Project>{041C6619-B45F-3088-898A-92F22DD53C9D}</Project>
+      <Name>compile_MatrixBase_noalias</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_ones.vcxproj">
+      <Project>{6D04C16F-3807-3911-B431-479B7D86D2DF}</Project>
+      <Name>compile_MatrixBase_ones</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_ones_int.vcxproj">
+      <Project>{F1448F95-8A05-33C6-8FF1-B7113443E023}</Project>
+      <Name>compile_MatrixBase_ones_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_ones_int_int.vcxproj">
+      <Project>{659768C3-15D8-330D-815B-40C141CAC876}</Project>
+      <Name>compile_MatrixBase_ones_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_operatorNorm.vcxproj">
+      <Project>{FE840A48-FFC7-3060-89CE-32EE75B5D77C}</Project>
+      <Name>compile_MatrixBase_operatorNorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_prod.vcxproj">
+      <Project>{A11CB404-DF76-3987-8DDB-BA39846FB687}</Project>
+      <Name>compile_MatrixBase_prod</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_random.vcxproj">
+      <Project>{C5B22FF9-4872-3794-9E3E-635301E52C28}</Project>
+      <Name>compile_MatrixBase_random</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_random_int.vcxproj">
+      <Project>{B5C40C59-2033-30CD-BC27-115D99CD7365}</Project>
+      <Name>compile_MatrixBase_random_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_random_int_int.vcxproj">
+      <Project>{4549E4C7-EDF4-32DB-AFEC-7ABBF0D3512B}</Project>
+      <Name>compile_MatrixBase_random_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_replicate.vcxproj">
+      <Project>{1398C3DC-2CB8-31EA-B30E-41675E238B56}</Project>
+      <Name>compile_MatrixBase_replicate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_replicate_int_int.vcxproj">
+      <Project>{1D660C16-FEDF-3181-9264-E0F62044DEF7}</Project>
+      <Name>compile_MatrixBase_replicate_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_reverse.vcxproj">
+      <Project>{2056AD23-6A6D-3321-B3EB-B41610EBEDC0}</Project>
+      <Name>compile_MatrixBase_reverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_rightCols_int.vcxproj">
+      <Project>{9039D6AC-2135-366F-9BC8-62DC334A561A}</Project>
+      <Name>compile_MatrixBase_rightCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_row.vcxproj">
+      <Project>{A9B139E2-1E47-307C-BDD4-E3CEECF7DFA4}</Project>
+      <Name>compile_MatrixBase_row</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_rowwise.vcxproj">
+      <Project>{807C16E9-0EF6-3067-B5E8-5010F1093183}</Project>
+      <Name>compile_MatrixBase_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_segment_int_int.vcxproj">
+      <Project>{4482E8AD-94B0-3553-8620-046852D05040}</Project>
+      <Name>compile_MatrixBase_segment_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_select.vcxproj">
+      <Project>{B15BE942-FE00-387E-BD63-829C7B91D093}</Project>
+      <Name>compile_MatrixBase_select</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_selfadjointView.vcxproj">
+      <Project>{8093E459-DF72-3A3A-9E60-F8BB19EB3B58}</Project>
+      <Name>compile_MatrixBase_selfadjointView</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_set.vcxproj">
+      <Project>{0BC1218B-B9F6-34F8-A324-DEA7610445D2}</Project>
+      <Name>compile_MatrixBase_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_setIdentity.vcxproj">
+      <Project>{8B6FD846-754F-30CA-A213-C018B3E05B14}</Project>
+      <Name>compile_MatrixBase_setIdentity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_setOnes.vcxproj">
+      <Project>{AC5CD99F-7B17-33BF-9853-FE79CED7BF3E}</Project>
+      <Name>compile_MatrixBase_setOnes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_setRandom.vcxproj">
+      <Project>{7512AEE3-1390-3B56-B3AB-F70DD7DF1475}</Project>
+      <Name>compile_MatrixBase_setRandom</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_setZero.vcxproj">
+      <Project>{17506C8F-1A1E-389E-B144-B307F545EB72}</Project>
+      <Name>compile_MatrixBase_setZero</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_start_int.vcxproj">
+      <Project>{A3BA53ED-9423-3839-88FE-9212266874EB}</Project>
+      <Name>compile_MatrixBase_start_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_bottomRows.vcxproj">
+      <Project>{7EC3AAB8-7CD6-361C-8467-8ABF2407C0F9}</Project>
+      <Name>compile_MatrixBase_template_int_bottomRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_end.vcxproj">
+      <Project>{96F1F85C-C6AE-3595-9AF0-0D317577F719}</Project>
+      <Name>compile_MatrixBase_template_int_end</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_int_block_int_int_int_int.vcxproj">
+      <Project>{C69E86E0-A6C0-3033-9153-B355AF8BF12E}</Project>
+      <Name>compile_MatrixBase_template_int_int_block_int_int_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_int_bottomLeftCorner.vcxproj">
+      <Project>{374684F2-A070-3939-99D5-5575765E0FD6}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomLeftCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_int_bottomLeftCorner_int_int.vcxproj">
+      <Project>{D7A1C1B3-9054-33C8-8FC1-A65869F8E9E7}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_int_bottomRightCorner.vcxproj">
+      <Project>{E700BA00-C1C7-3765-8BBE-AA02301EDDC4}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomRightCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_int_bottomRightCorner_int_int.vcxproj">
+      <Project>{6CD45563-1926-3406-A7AB-FE29C1134F4F}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_int_topLeftCorner.vcxproj">
+      <Project>{15AE955A-4F1A-334C-80F6-172FB2CCF75A}</Project>
+      <Name>compile_MatrixBase_template_int_int_topLeftCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_int_topLeftCorner_int_int.vcxproj">
+      <Project>{0C5E363D-DF85-3B65-8DF6-5BF13F09D2D6}</Project>
+      <Name>compile_MatrixBase_template_int_int_topLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_int_topRightCorner.vcxproj">
+      <Project>{A17802A1-3685-3E70-8C02-596BB3A2245E}</Project>
+      <Name>compile_MatrixBase_template_int_int_topRightCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_int_topRightCorner_int_int.vcxproj">
+      <Project>{52173C04-75BB-3CE3-99C0-43D6B29C0C31}</Project>
+      <Name>compile_MatrixBase_template_int_int_topRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_leftCols.vcxproj">
+      <Project>{8E44FE9B-8155-3FDD-8047-D6B7BFC26B6D}</Project>
+      <Name>compile_MatrixBase_template_int_leftCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_rightCols.vcxproj">
+      <Project>{FD467364-5C01-3083-82E7-7099BF0A5A85}</Project>
+      <Name>compile_MatrixBase_template_int_rightCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_segment.vcxproj">
+      <Project>{EE636641-36BA-3480-A092-8B14E8C3C752}</Project>
+      <Name>compile_MatrixBase_template_int_segment</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_start.vcxproj">
+      <Project>{BB846EDA-967D-360E-8E71-063A6456CE8D}</Project>
+      <Name>compile_MatrixBase_template_int_start</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_template_int_topRows.vcxproj">
+      <Project>{BA96A876-BB95-3D10-8711-6DE0E32F370D}</Project>
+      <Name>compile_MatrixBase_template_int_topRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_topLeftCorner_int_int.vcxproj">
+      <Project>{B5DC28FB-DFE1-34DF-89C9-D1E3D37C7F3D}</Project>
+      <Name>compile_MatrixBase_topLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_topRightCorner_int_int.vcxproj">
+      <Project>{D124EEB8-A5F5-3409-9919-46E18B69C5A4}</Project>
+      <Name>compile_MatrixBase_topRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_topRows_int.vcxproj">
+      <Project>{B3FCDA43-11A2-3976-A450-E70367B82703}</Project>
+      <Name>compile_MatrixBase_topRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_transpose.vcxproj">
+      <Project>{E3768BC0-4556-34D7-97D0-B3367408D365}</Project>
+      <Name>compile_MatrixBase_transpose</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_triangularView.vcxproj">
+      <Project>{243BD98C-7EA2-399C-9710-B532317A994B}</Project>
+      <Name>compile_MatrixBase_triangularView</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_zero.vcxproj">
+      <Project>{7CC97B6C-C70A-3C35-AC7E-4989948F4AD9}</Project>
+      <Name>compile_MatrixBase_zero</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_zero_int.vcxproj">
+      <Project>{11C03862-BD30-3705-8F3F-DC522F219C1B}</Project>
+      <Name>compile_MatrixBase_zero_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_MatrixBase_zero_int_int.vcxproj">
+      <Project>{E7EC3F6B-7611-30AD-BB97-2DB89F0992B5}</Project>
+      <Name>compile_MatrixBase_zero_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_Map_stride.vcxproj">
+      <Project>{CCA01C0C-99FD-3A3F-9B6A-9B1FE73C3528}</Project>
+      <Name>compile_Matrix_Map_stride</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_resize_NoChange_int.vcxproj">
+      <Project>{8330384E-BC07-31AA-93CC-A8CC0E410F53}</Project>
+      <Name>compile_Matrix_resize_NoChange_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_resize_int.vcxproj">
+      <Project>{6F554321-5A91-3D55-86EE-CAB78257C52E}</Project>
+      <Name>compile_Matrix_resize_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_resize_int_NoChange.vcxproj">
+      <Project>{017CBFDA-3AB9-3878-9F01-1E0F5C94DA41}</Project>
+      <Name>compile_Matrix_resize_int_NoChange</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_resize_int_int.vcxproj">
+      <Project>{6A1F1C32-7E24-39C5-9540-F5347F98F8C5}</Project>
+      <Name>compile_Matrix_resize_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_setConstant_int.vcxproj">
+      <Project>{B13A5B09-F354-3C4B-99AC-7B7A92D5A102}</Project>
+      <Name>compile_Matrix_setConstant_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_setConstant_int_int.vcxproj">
+      <Project>{8A1D2859-3388-303F-AC89-9DD6879E9C21}</Project>
+      <Name>compile_Matrix_setConstant_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_setIdentity_int_int.vcxproj">
+      <Project>{E69F6F04-CBCD-3288-8AC8-9A86CBFE933F}</Project>
+      <Name>compile_Matrix_setIdentity_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_setOnes_int.vcxproj">
+      <Project>{8AAD99A2-99D5-3898-BF3D-BA1E49E0F982}</Project>
+      <Name>compile_Matrix_setOnes_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_setOnes_int_int.vcxproj">
+      <Project>{E7544648-E0A2-323A-BDC8-D34B16BD50C6}</Project>
+      <Name>compile_Matrix_setOnes_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_setRandom_int.vcxproj">
+      <Project>{3E9022D9-79BA-3FEC-B8AF-3E50600B0A76}</Project>
+      <Name>compile_Matrix_setRandom_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_setRandom_int_int.vcxproj">
+      <Project>{2D59E91B-4B77-3151-A846-B53C68564C44}</Project>
+      <Name>compile_Matrix_setRandom_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_setZero_int.vcxproj">
+      <Project>{EA970277-A4E3-3026-AAEE-DF33F2F58E8D}</Project>
+      <Name>compile_Matrix_setZero_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Matrix_setZero_int_int.vcxproj">
+      <Project>{2D7A769C-96E8-328E-ACA9-77122D14FFD3}</Project>
+      <Name>compile_Matrix_setZero_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_PartialPivLU_solve.vcxproj">
+      <Project>{B62E1C34-4996-301B-9F5D-A8658D1236C8}</Project>
+      <Name>compile_PartialPivLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_PartialRedux_count.vcxproj">
+      <Project>{8A2758D8-5F35-3024-B2B5-4733A1059F7D}</Project>
+      <Name>compile_PartialRedux_count</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_PartialRedux_maxCoeff.vcxproj">
+      <Project>{02B00B68-3C91-3DC9-9BE1-AB59FFCE6F96}</Project>
+      <Name>compile_PartialRedux_maxCoeff</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_PartialRedux_minCoeff.vcxproj">
+      <Project>{E0D6FD18-1B21-35CB-B7B9-47AD9B1C5B1B}</Project>
+      <Name>compile_PartialRedux_minCoeff</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_PartialRedux_norm.vcxproj">
+      <Project>{8561279A-AD08-3993-8A0F-FC44AC2245F0}</Project>
+      <Name>compile_PartialRedux_norm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_PartialRedux_prod.vcxproj">
+      <Project>{5ABA0DEF-F25E-30EA-82A4-00C6091C49EF}</Project>
+      <Name>compile_PartialRedux_prod</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_PartialRedux_squaredNorm.vcxproj">
+      <Project>{E4EFAE17-52DB-3CE6-BD96-90495E59BEBA}</Project>
+      <Name>compile_PartialRedux_squaredNorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_PartialRedux_sum.vcxproj">
+      <Project>{EEB50A37-1AFA-366C-A3C6-0617B98BEF1A}</Project>
+      <Name>compile_PartialRedux_sum</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_RealQZ_compute.vcxproj">
+      <Project>{9CF7E7A4-1C5F-33FC-A1B4-910D9D0848F3}</Project>
+      <Name>compile_RealQZ_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_RealSchur_RealSchur_MatrixType.vcxproj">
+      <Project>{47D97346-2DFF-3379-893A-1330F7B786A7}</Project>
+      <Name>compile_RealSchur_RealSchur_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_RealSchur_compute.vcxproj">
+      <Project>{B54D9B1B-8F6E-323D-BD82-7BF5EE37DFB6}</Project>
+      <Name>compile_RealSchur_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver.vcxproj">
+      <Project>{D47C58DE-4E72-389A-BAD4-3A4E19706A52}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType.vcxproj">
+      <Project>{CD1B43B3-7395-3C1A-8B86-C73B132F6FFE}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType2.vcxproj">
+      <Project>{672EDFF2-62A8-3125-888A-3368CCE545B7}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SelfAdjointEigenSolver_compute_MatrixType.vcxproj">
+      <Project>{4FFD64C3-2E63-3FBF-B928-E1F706EA3DD8}</Project>
+      <Name>compile_SelfAdjointEigenSolver_compute_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SelfAdjointEigenSolver_compute_MatrixType2.vcxproj">
+      <Project>{C5588AE6-19C7-37BF-A27B-34FD4905B725}</Project>
+      <Name>compile_SelfAdjointEigenSolver_compute_MatrixType2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SelfAdjointEigenSolver_eigenvalues.vcxproj">
+      <Project>{58644963-7C43-31AC-AA9E-BCB624EB6D94}</Project>
+      <Name>compile_SelfAdjointEigenSolver_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SelfAdjointEigenSolver_eigenvectors.vcxproj">
+      <Project>{F1D0BDB7-CCC8-350F-8910-995650C07CAD}</Project>
+      <Name>compile_SelfAdjointEigenSolver_eigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SelfAdjointEigenSolver_operatorInverseSqrt.vcxproj">
+      <Project>{E03AA76E-2F59-38D5-AA6C-48C647ACB389}</Project>
+      <Name>compile_SelfAdjointEigenSolver_operatorInverseSqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SelfAdjointEigenSolver_operatorSqrt.vcxproj">
+      <Project>{73FA450E-AD0F-341F-A133-B54EBF3547D6}</Project>
+      <Name>compile_SelfAdjointEigenSolver_operatorSqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SelfAdjointView_eigenvalues.vcxproj">
+      <Project>{5ED9F84E-E735-3DE2-8812-F80655973B3C}</Project>
+      <Name>compile_SelfAdjointView_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SelfAdjointView_operatorNorm.vcxproj">
+      <Project>{78EF0021-33AF-3890-B470-52A60248645D}</Project>
+      <Name>compile_SelfAdjointView_operatorNorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_SparseMatrix_coeffs.vcxproj">
+      <Project>{7CBDA64B-D96C-36BF-90F6-6DEFBD4E5AC3}</Project>
+      <Name>compile_SparseMatrix_coeffs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_TopicAliasing_block.vcxproj">
+      <Project>{C2E2B300-642F-385B-9157-7B0D87522A9B}</Project>
+      <Name>compile_TopicAliasing_block</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_TopicAliasing_block_correct.vcxproj">
+      <Project>{EE507D9B-A83F-3584-896A-F87F07C9CF65}</Project>
+      <Name>compile_TopicAliasing_block_correct</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_TopicAliasing_cwise.vcxproj">
+      <Project>{4496322D-2AE1-3BC1-AB26-55DFA3007A23}</Project>
+      <Name>compile_TopicAliasing_cwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_TopicAliasing_mult1.vcxproj">
+      <Project>{0A2E70D2-CBF6-3D9F-A1E7-FB19254D9495}</Project>
+      <Name>compile_TopicAliasing_mult1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_TopicAliasing_mult2.vcxproj">
+      <Project>{96C80959-E803-3744-88C5-7DF23B1B9964}</Project>
+      <Name>compile_TopicAliasing_mult2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_TopicAliasing_mult3.vcxproj">
+      <Project>{9043CB1F-C2F1-3E2D-925D-71A63C137C9B}</Project>
+      <Name>compile_TopicAliasing_mult3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_TopicAliasing_mult4.vcxproj">
+      <Project>{799F44DD-156C-3EA7-B484-C09660C7E049}</Project>
+      <Name>compile_TopicAliasing_mult4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_TopicAliasing_mult5.vcxproj">
+      <Project>{322005D2-4C0F-335C-AFD8-C9760C40BE08}</Project>
+      <Name>compile_TopicAliasing_mult5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_TopicStorageOrders_example.vcxproj">
+      <Project>{5E53BC60-6F84-3F35-A43A-D0C9D09D2A7A}</Project>
+      <Name>compile_TopicStorageOrders_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Triangular_solve.vcxproj">
+      <Project>{005D386E-1C9E-3E69-94FC-474EFCF0B41C}</Project>
+      <Name>compile_Triangular_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tridiagonalization_Tridiagonalization_MatrixType.vcxproj">
+      <Project>{5D8FE8BF-05E1-3E14-88B9-79BF944416E0}</Project>
+      <Name>compile_Tridiagonalization_Tridiagonalization_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tridiagonalization_compute.vcxproj">
+      <Project>{4A3CE052-DAAF-3818-882C-9A868FC8CBD5}</Project>
+      <Name>compile_Tridiagonalization_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tridiagonalization_decomposeInPlace.vcxproj">
+      <Project>{990F6D1A-D6CB-37FD-B9FD-EC34D0597FD4}</Project>
+      <Name>compile_Tridiagonalization_decomposeInPlace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tridiagonalization_diagonal.vcxproj">
+      <Project>{61303D1E-05C6-31BB-8913-2C9700413AEB}</Project>
+      <Name>compile_Tridiagonalization_diagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tridiagonalization_householderCoefficients.vcxproj">
+      <Project>{2E1A48CA-AF94-3F6D-801C-3885FD631A2A}</Project>
+      <Name>compile_Tridiagonalization_householderCoefficients</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tridiagonalization_packedMatrix.vcxproj">
+      <Project>{DCECAF80-ED0D-3070-BE12-3FF4E0477F7C}</Project>
+      <Name>compile_Tridiagonalization_packedMatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_Block.vcxproj">
+      <Project>{3D01E029-C3E7-3AD3-B2D9-BCA9C6B95C20}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Block</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_CommaTemporary.vcxproj">
+      <Project>{9BB43D3F-92BE-352A-AEF7-5E388EB61442}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_CommaTemporary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_Join.vcxproj">
+      <Project>{6FAA1738-7E6A-34B8-8DFE-173BCE1B2D0B}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Join</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_LinSpaced.vcxproj">
+      <Project>{18949044-9312-3999-8B37-0F5F106F393F}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_LinSpaced</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_ThreeWays.vcxproj">
+      <Project>{AEDA295D-5F50-314D-B99A-E0D18B57AA28}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_ThreeWays</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_Zero.vcxproj">
+      <Project>{6D3FB6BA-A51A-35D2-8555-EF82B5FDAB50}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Zero</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_Map_rowmajor.vcxproj">
+      <Project>{4FA32224-CDF8-3792-A781-7CE5BCF782F6}</Project>
+      <Name>compile_Tutorial_Map_rowmajor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_Map_using.vcxproj">
+      <Project>{5E79F32C-A897-3B73-A186-779DD3E5B11A}</Project>
+      <Name>compile_Tutorial_Map_using</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_ReshapeMat2Mat.vcxproj">
+      <Project>{06809BDC-D625-3570-A88E-758FBDE877E5}</Project>
+      <Name>compile_Tutorial_ReshapeMat2Mat</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_ReshapeMat2Vec.vcxproj">
+      <Project>{4F10DD69-7FC3-3A4C-AE58-F10F3CC08595}</Project>
+      <Name>compile_Tutorial_ReshapeMat2Vec</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_SlicingCol.vcxproj">
+      <Project>{3F2F0E7F-7984-3FDE-852C-769820C246E9}</Project>
+      <Name>compile_Tutorial_SlicingCol</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_SlicingVec.vcxproj">
+      <Project>{88CE8C54-A396-34DB-AAE8-8CEEE3FFE28A}</Project>
+      <Name>compile_Tutorial_SlicingVec</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_commainit_01.vcxproj">
+      <Project>{FC5C49AF-A4FA-31AB-933A-D1E6AE1D4534}</Project>
+      <Name>compile_Tutorial_commainit_01</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_commainit_01b.vcxproj">
+      <Project>{E556C69F-0909-316C-B4C8-01B3898F3B83}</Project>
+      <Name>compile_Tutorial_commainit_01b</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_commainit_02.vcxproj">
+      <Project>{4FFBA054-D4E9-3D6C-A91B-D209ACD446F4}</Project>
+      <Name>compile_Tutorial_commainit_02</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_solve_matrix_inverse.vcxproj">
+      <Project>{F165AED0-AB44-3989-A1ED-531F6680F73D}</Project>
+      <Name>compile_Tutorial_solve_matrix_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_solve_multiple_rhs.vcxproj">
+      <Project>{06C4793A-D2F7-3E5C-82E9-CD5D93248A5A}</Project>
+      <Name>compile_Tutorial_solve_multiple_rhs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_solve_reuse_decomposition.vcxproj">
+      <Project>{34F3CBBA-CCE2-36D5-BE5D-BF3BD8F0E098}</Project>
+      <Name>compile_Tutorial_solve_reuse_decomposition</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_solve_singular.vcxproj">
+      <Project>{A9C60015-3935-3350-A78E-7BE6D06400DC}</Project>
+      <Name>compile_Tutorial_solve_singular</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_solve_triangular.vcxproj">
+      <Project>{C1C8D6F0-D23C-3D32-BCFE-8335C7988A0E}</Project>
+      <Name>compile_Tutorial_solve_triangular</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Tutorial_solve_triangular_inplace.vcxproj">
+      <Project>{99D7B311-2C33-3A5C-8580-0B343D671D5D}</Project>
+      <Name>compile_Tutorial_solve_triangular_inplace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_VectorwiseOp_homogeneous.vcxproj">
+      <Project>{D1053313-A90C-3779-81C6-CD643D299C1F}</Project>
+      <Name>compile_VectorwiseOp_homogeneous</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_Vectorwise_reverse.vcxproj">
+      <Project>{B73845AC-7DDD-314B-B85E-46105D4CCA33}</Project>
+      <Name>compile_Vectorwise_reverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_class_FullPivLU.vcxproj">
+      <Project>{2242EC5E-FFE6-3CA8-8B48-405DB5E5EF1C}</Project>
+      <Name>compile_class_FullPivLU</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_tut_arithmetic_redux_minmax.vcxproj">
+      <Project>{8C84A155-3280-365F-9588-2C01CCCB1243}</Project>
+      <Name>compile_tut_arithmetic_redux_minmax</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_tut_arithmetic_transpose_aliasing.vcxproj">
+      <Project>{D39247BD-A3E4-3217-A9DC-E637C7ACA736}</Project>
+      <Name>compile_tut_arithmetic_transpose_aliasing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_tut_arithmetic_transpose_conjugate.vcxproj">
+      <Project>{37310E59-633A-32BD-BD55-EAFB522F72AC}</Project>
+      <Name>compile_tut_arithmetic_transpose_conjugate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_tut_arithmetic_transpose_inplace.vcxproj">
+      <Project>{8311520C-4423-39B6-8C82-C62834EB5956}</Project>
+      <Name>compile_tut_arithmetic_transpose_inplace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\snippets\compile_tut_matrix_assignment_resizing.vcxproj">
+      <Project>{841288A5-21F8-3295-9808-6187F76C71DA}</Project>
+      <Name>compile_tut_matrix_assignment_resizing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

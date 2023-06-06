@@ -175,6 +175,7 @@ void cDrawUtil::DrawBoxSolid(const tVector& pos, const tVector& size, const tVec
 
 void cDrawUtil::DrawBoxWire(const tVector& pos, const tVector& size)
 {
+	return;
 	PushMatrixView();
 	Translate(pos);
 	Scale(size);
@@ -388,9 +389,14 @@ void cDrawUtil::DrawSphere(double r, eDrawMode draw_mode)
 	{
 		gSphereMesh->Draw(GL_LINES);
 	}
+
 	else if (draw_mode == eDrawWireSimple)
 	{
 		gSphereWireSimpleMesh->Draw(GL_LINES);
+	}
+	else if (draw_mode == eDrawBoxOnly)
+	{
+		
 	}
 	else
 	{
@@ -420,6 +426,10 @@ void cDrawUtil::DrawHemisphere(double r, eDrawMode draw_mode)
 	{
 		gSphereWireSimpleMesh->Draw(GL_LINES, 0, ((gNumStacks / 2) * 4 + gNumSlice) * 2);
 	}
+	else if (draw_mode == eDrawBoxOnly)
+	{
+		
+	}
 	else
 	{
 		assert(false); // unsupported draw mode
@@ -438,6 +448,10 @@ void cDrawUtil::DrawCylinder(double r, double h, eDrawMode draw_mode)
 	{
 		DrawCylinderWireSimple(r, h);
 	}
+	else if (draw_mode == eDrawBoxOnly)
+	{
+
+	}
 	else
 	{
 		assert(false); // unsupported draw mode
@@ -454,6 +468,10 @@ void cDrawUtil::DrawCone(double r, double h, eDrawMode draw_mode)
 	{
 		DrawConeWireSimple(r, h);
 	}
+	else if (draw_mode == eDrawBoxOnly)
+	{
+
+	}
 	else
 	{
 		assert(false); // unsupported draw mode
@@ -469,6 +487,10 @@ void cDrawUtil::DrawTube(double r, double h, eDrawMode draw_mode)
 	else if (draw_mode == eDrawWireSimple)
 	{
 		DrawCylinderWireSimple(r, h);
+	}
+	else if (draw_mode == eDrawBoxOnly)
+	{
+
 	}
 	else
 	{
@@ -603,6 +625,7 @@ void cDrawUtil::DrawGrid2D(const tVector& origin, const tVector& size, double sp
 
 	cDrawUtil::SetLineWidth(line_width);
 	cDrawUtil::SetColor(tVector(188 / 255.f, 219 / 255.f, 242 / 255.f, 1.f));
+
 
 	for (double x = min_x - std::fmod(min_x, spacing); x < max_x; x += spacing)
 	{

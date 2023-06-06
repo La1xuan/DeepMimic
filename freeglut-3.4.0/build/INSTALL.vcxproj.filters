@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\GitRepos\DeepMimic\freeglut-3.4.0\build\CMakeFiles\43ff3b45fea7fb3ce04453bc36209c0d\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F6AF1E58-E74A-3123-B5A6-006F88C0472E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

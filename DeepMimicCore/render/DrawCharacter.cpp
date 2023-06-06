@@ -169,7 +169,10 @@ void cDrawCharacter::DrawShapeBox(const cKinTree::tDrawShapeDef& def, const tMat
 	if (line_col[3] > 0)
 	{
 		cDrawUtil::SetColor(line_col);
-		cDrawUtil::DrawBox(tVector::Zero(), size, cDrawUtil::eDrawWireSimple);
+		//Qixuan: Changing the drawing mode from simple wired(eDrawWireSimple) to eDrawBoxOnly
+		//cDrawUtil::DrawBox(tVector::Zero(), size, cDrawUtil::eDrawWireSimple);
+		cDrawUtil::DrawBox(tVector::Zero(), size, cDrawUtil::eDrawBoxOnly);
+		//end Qixuan
 	}
 
 	cDrawUtil::PopMatrixView();
@@ -201,7 +204,11 @@ void cDrawCharacter::DrawShapeCapsule(const cKinTree::tDrawShapeDef& def, const 
 	if (line_col[3] > 0)
 	{
 		cDrawUtil::SetColor(line_col);
-		cDrawUtil::DrawCapsule(r, h, cDrawUtil::eDrawWireSimple);
+		//Qixuan: Changing the drawing mode from simple wired(eDrawWireSimple) to eDrawBoxOnly
+		//cDrawUtil::DrawCapsule(r, h, cDrawUtil::eDrawWireSimple);
+		cDrawUtil::DrawCapsule(r, h, cDrawUtil::eDrawBoxOnly);
+		//end Qixuan
+		
 	}
 
 	cDrawUtil::PopMatrixView();
@@ -232,7 +239,11 @@ void cDrawCharacter::DrawShapeSphere(const cKinTree::tDrawShapeDef& def, const t
 	if (line_col[3] > 0)
 	{
 		cDrawUtil::SetColor(line_col);
-		cDrawUtil::DrawSphere(r, cDrawUtil::eDrawWireSimple);
+		
+		//Qixuan: Changing the drawing mode from simple wired(eDrawWireSimple) to eDrawBoxOnly
+		//cDrawUtil::DrawSphere(r, cDrawUtil::eDrawWireSimple);
+		cDrawUtil::DrawSphere(r, cDrawUtil::eDrawBoxOnly);
+		//end Qixuan
 	}
 
 	cDrawUtil::PopMatrixView();
@@ -264,7 +275,11 @@ void cDrawCharacter::DrawShapeCylinder(const cKinTree::tDrawShapeDef& def, const
 	if (line_col[3] > 0)
 	{
 		cDrawUtil::SetColor(line_col);
-		cDrawUtil::DrawCylinder(r, h, cDrawUtil::eDrawWireSimple);
+		//Qixuan: Changing the drawing mode from simple wired(eDrawWireSimple) to box only (eDrawBoxOnly)
+		//cDrawUtil::DrawCylinder(r, h, cDrawUtil::eDrawWireSimple);
+		cDrawUtil::DrawCylinder(r, h, cDrawUtil::eDrawBoxOnly);
+		//end Qixuan
+		
 	}
 
 	cDrawUtil::PopMatrixView();

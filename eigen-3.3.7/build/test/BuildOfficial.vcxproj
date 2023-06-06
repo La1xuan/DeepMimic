@@ -1,0 +1,2833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C352C14D-A32E-3860-8F7F-A0B70E56CED4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>BuildOfficial</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\test;C:\GitRepos\DeepMimic\eigen-3.3.7\test;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\test;C:\GitRepos\DeepMimic\eigen-3.3.7\test;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\test;C:\GitRepos\DeepMimic\eigen-3.3.7\test;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\test;C:\GitRepos\DeepMimic\eigen-3.3.7\test;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GitRepos\DeepMimic\eigen-3.3.7\test\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\CMakeFiles\FindMPI\test_mpi.cpp;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindBLAS.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindBLASEXT.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindCholmod.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindHWLOC.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindLAPACK.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindMetis.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindPTSCOTCH.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindPastix.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindSPQR.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindScotch.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindSuperLU.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindUmfpack.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\language_support.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindMPI\test_mpi.c;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\MacroAddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\CMakeFiles\FindMPI\test_mpi.cpp;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindBLAS.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindBLASEXT.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindCholmod.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindHWLOC.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindLAPACK.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindMetis.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindPTSCOTCH.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindPastix.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindSPQR.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindScotch.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindSuperLU.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindUmfpack.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\language_support.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindMPI\test_mpi.c;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\MacroAddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\CMakeFiles\FindMPI\test_mpi.cpp;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindBLAS.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindBLASEXT.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindCholmod.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindHWLOC.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindLAPACK.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindMetis.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindPTSCOTCH.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindPastix.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindSPQR.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindScotch.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindSuperLU.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindUmfpack.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\language_support.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindMPI\test_mpi.c;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\MacroAddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\CMakeFiles\FindMPI\test_mpi.cpp;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindBLAS.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindBLASEXT.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindCholmod.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindHWLOC.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindLAPACK.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindMetis.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindPTSCOTCH.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindPastix.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindSPQR.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindScotch.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindSuperLU.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\FindUmfpack.cmake;C:\GitRepos\DeepMimic\eigen-3.3.7\cmake\language_support.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindMPI\test_mpi.c;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\MacroAddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\ZERO_CHECK.vcxproj">
+      <Project>{EFEA8FAC-BB9B-3250-9DBD-FC51A1D450F6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_1.vcxproj">
+      <Project>{C4D9D657-95DD-3215-AF98-701A3FA902F0}</Project>
+      <Name>adjoint_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_10.vcxproj">
+      <Project>{7A3F7C16-1A54-3344-8D0B-66B2564FA040}</Project>
+      <Name>adjoint_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_11.vcxproj">
+      <Project>{7C034BAB-63E2-3949-BD26-1C4169C5313C}</Project>
+      <Name>adjoint_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_12.vcxproj">
+      <Project>{CD6012FE-E7E9-3ED6-BC5D-B90B77B674EB}</Project>
+      <Name>adjoint_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_13.vcxproj">
+      <Project>{2964CB29-EED2-3D46-8698-081832981C7E}</Project>
+      <Name>adjoint_13</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_2.vcxproj">
+      <Project>{DD765117-9ABD-3165-A9D4-052C7CAB2DB6}</Project>
+      <Name>adjoint_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_3.vcxproj">
+      <Project>{4CE88AFB-38CD-3E2F-9C4F-3D0F33164E7B}</Project>
+      <Name>adjoint_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_4.vcxproj">
+      <Project>{AD2BA46C-4182-3153-AB02-6890BCF84332}</Project>
+      <Name>adjoint_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_5.vcxproj">
+      <Project>{6643C0D0-7103-3552-81CA-37386AECA640}</Project>
+      <Name>adjoint_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_6.vcxproj">
+      <Project>{88869E1F-074C-3F6F-8F75-165CF4828DC7}</Project>
+      <Name>adjoint_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_7.vcxproj">
+      <Project>{A98FDA7F-2343-3834-8262-0E29CEA82E60}</Project>
+      <Name>adjoint_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_8.vcxproj">
+      <Project>{9146A7D0-FFE0-3099-8923-FF13B47A633D}</Project>
+      <Name>adjoint_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\adjoint_9.vcxproj">
+      <Project>{C25C94A5-3332-3ADE-83B4-0DF6D6D00053}</Project>
+      <Name>adjoint_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_1.vcxproj">
+      <Project>{2CF4F943-CFAF-3977-AD3A-F61ABB5CB09E}</Project>
+      <Name>array_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_2.vcxproj">
+      <Project>{932F6B37-7FA4-32C7-89D3-CCBAB3C25C10}</Project>
+      <Name>array_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_3.vcxproj">
+      <Project>{04A8EF0C-E527-3B8E-A361-986BFA907CE1}</Project>
+      <Name>array_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_4.vcxproj">
+      <Project>{92FBBC12-EBBD-3194-9258-B4A796CD26C4}</Project>
+      <Name>array_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_5.vcxproj">
+      <Project>{BEFB5001-B606-3EFD-991A-5C20DFE27AA8}</Project>
+      <Name>array_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_6.vcxproj">
+      <Project>{D7E78033-AD8A-3CDE-B004-750E21D11E87}</Project>
+      <Name>array_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_for_matrix_1.vcxproj">
+      <Project>{444F9A7C-575E-37F3-8589-FE7E224279B0}</Project>
+      <Name>array_for_matrix_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_for_matrix_2.vcxproj">
+      <Project>{3046C3C4-AF5F-3FA5-94E0-EAF01B4B09CA}</Project>
+      <Name>array_for_matrix_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_for_matrix_3.vcxproj">
+      <Project>{A3022176-684D-37F5-BE2A-C770580D4554}</Project>
+      <Name>array_for_matrix_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_for_matrix_4.vcxproj">
+      <Project>{E2442B2A-7B4D-39F2-82B3-F736295E4F5B}</Project>
+      <Name>array_for_matrix_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_for_matrix_5.vcxproj">
+      <Project>{E9CD696A-5F2F-33F0-BD04-AA072A4BD2A8}</Project>
+      <Name>array_for_matrix_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_for_matrix_6.vcxproj">
+      <Project>{714F5EAC-9186-3F9D-8A45-514A7C290FB2}</Project>
+      <Name>array_for_matrix_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_for_matrix_7.vcxproj">
+      <Project>{4DD82B4B-F010-3AFF-B453-854F470CD0E2}</Project>
+      <Name>array_for_matrix_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_for_matrix_8.vcxproj">
+      <Project>{D2825687-EB59-37D9-A276-AE5CC3ACC3BA}</Project>
+      <Name>array_for_matrix_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_of_string.vcxproj">
+      <Project>{8AEC02EF-17D1-3718-841A-A712BEE2DD3C}</Project>
+      <Name>array_of_string</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_replicate_1.vcxproj">
+      <Project>{7ECFEE76-CA4A-336B-9A11-026C08B36888}</Project>
+      <Name>array_replicate_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_replicate_2.vcxproj">
+      <Project>{14DE2FDC-0256-3067-BF7B-2DE0B2EBAC5E}</Project>
+      <Name>array_replicate_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_replicate_3.vcxproj">
+      <Project>{1837B519-4D95-34FE-81BD-57DEA4481151}</Project>
+      <Name>array_replicate_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_replicate_4.vcxproj">
+      <Project>{C4C67646-9857-3CFB-99D3-F2B72C64D8A5}</Project>
+      <Name>array_replicate_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_replicate_5.vcxproj">
+      <Project>{05804096-0EEC-3C4A-BB24-928C8A09ABF1}</Project>
+      <Name>array_replicate_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_replicate_6.vcxproj">
+      <Project>{F6F6BC15-1EF2-3295-9B8F-79AEF52D4493}</Project>
+      <Name>array_replicate_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_reverse_1.vcxproj">
+      <Project>{AEF41C68-12C3-3321-B518-E22CA6108B6F}</Project>
+      <Name>array_reverse_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_reverse_2.vcxproj">
+      <Project>{5A3A528E-C267-3562-A008-F9E37245AD50}</Project>
+      <Name>array_reverse_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_reverse_3.vcxproj">
+      <Project>{EBA25A08-4250-3A3D-8D94-47687B9192FB}</Project>
+      <Name>array_reverse_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_reverse_4.vcxproj">
+      <Project>{A09CCEE2-4CCD-3EEB-9361-2294E8ABA86C}</Project>
+      <Name>array_reverse_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_reverse_5.vcxproj">
+      <Project>{331E7A33-F9E0-3BE5-8975-59829D4D8BE6}</Project>
+      <Name>array_reverse_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_reverse_6.vcxproj">
+      <Project>{A902B111-6807-3A7E-A9AF-7508163C7E17}</Project>
+      <Name>array_reverse_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_reverse_7.vcxproj">
+      <Project>{BB02496E-A6E9-36D5-A93B-BF21E69C8555}</Project>
+      <Name>array_reverse_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_reverse_8.vcxproj">
+      <Project>{1F42D515-C2F4-3E26-A5E0-8BC16DA2FA9F}</Project>
+      <Name>array_reverse_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\array_reverse_9.vcxproj">
+      <Project>{35A01818-A5DF-344A-B987-95265DFA9E84}</Project>
+      <Name>array_reverse_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bandmatrix.vcxproj">
+      <Project>{00E3DB4F-4AF7-334F-B751-CEA7329771A8}</Project>
+      <Name>bandmatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\basicstuff_1.vcxproj">
+      <Project>{BCCF09F0-82D8-343D-AD93-4D8E7038B326}</Project>
+      <Name>basicstuff_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\basicstuff_2.vcxproj">
+      <Project>{77336591-245A-369F-9211-C04302C4B66A}</Project>
+      <Name>basicstuff_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\basicstuff_3.vcxproj">
+      <Project>{3DBA4699-5CE4-3E33-9E35-7B541AA14C4A}</Project>
+      <Name>basicstuff_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\basicstuff_4.vcxproj">
+      <Project>{DCC80C8D-5CAC-3A54-941D-C751284322B5}</Project>
+      <Name>basicstuff_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\basicstuff_5.vcxproj">
+      <Project>{11A97DD0-8AD6-3DD0-B4BC-0DAEA3B604BA}</Project>
+      <Name>basicstuff_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\basicstuff_6.vcxproj">
+      <Project>{38149EDA-BAD3-3058-9D02-745556466819}</Project>
+      <Name>basicstuff_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\basicstuff_7.vcxproj">
+      <Project>{FD4629F5-867D-3AA7-86B5-DD83F3BAAD30}</Project>
+      <Name>basicstuff_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_1.vcxproj">
+      <Project>{0E34D969-9BB4-31EA-9A6A-5CDF86D40353}</Project>
+      <Name>bdcsvd_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_10.vcxproj">
+      <Project>{1351C801-624F-394C-9C3D-C412AB3218DE}</Project>
+      <Name>bdcsvd_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_101.vcxproj">
+      <Project>{F144A826-2A02-3872-9902-0CA9C88535F6}</Project>
+      <Name>bdcsvd_101</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_102.vcxproj">
+      <Project>{B2FE51D7-1B20-30BE-8A40-303EFD471F80}</Project>
+      <Name>bdcsvd_102</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_2.vcxproj">
+      <Project>{68133F00-8D06-3A5F-A51B-8518A0B235C2}</Project>
+      <Name>bdcsvd_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_3.vcxproj">
+      <Project>{300977CE-04D3-3AD9-92CF-9FA16BF03E75}</Project>
+      <Name>bdcsvd_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_4.vcxproj">
+      <Project>{9077B8CB-CC44-3261-9C1F-E9B0F85B9D44}</Project>
+      <Name>bdcsvd_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_5.vcxproj">
+      <Project>{3E4DFFF7-94E6-3418-8A16-E9E77287CE3E}</Project>
+      <Name>bdcsvd_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_6.vcxproj">
+      <Project>{8BDA652D-4792-331C-9826-4313ACCEA904}</Project>
+      <Name>bdcsvd_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_7.vcxproj">
+      <Project>{6DBB45B4-CD96-3AC2-B2B4-1B6383669DC4}</Project>
+      <Name>bdcsvd_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_8.vcxproj">
+      <Project>{88561165-A5CC-3F62-86C9-936DB972A135}</Project>
+      <Name>bdcsvd_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bdcsvd_9.vcxproj">
+      <Project>{A1C27E6C-A9DE-3D45-B9AA-ED477968D48F}</Project>
+      <Name>bdcsvd_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bicgstab_1.vcxproj">
+      <Project>{7444FD28-9003-30CF-8A82-B29DE3445842}</Project>
+      <Name>bicgstab_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bicgstab_2.vcxproj">
+      <Project>{6E24A675-78A0-3FB2-9003-08D2F87014D8}</Project>
+      <Name>bicgstab_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\bicgstab_3.vcxproj">
+      <Project>{1E25F130-643C-3A80-AAD6-4298F23804EE}</Project>
+      <Name>bicgstab_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\block_1.vcxproj">
+      <Project>{3DA087AD-9738-383F-A599-237B05F4B8BE}</Project>
+      <Name>block_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\block_2.vcxproj">
+      <Project>{9119F096-4356-30F1-87F0-C032EAB4F4CE}</Project>
+      <Name>block_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\block_3.vcxproj">
+      <Project>{9F38AA5A-05F8-31CB-B276-01D60BEC7B75}</Project>
+      <Name>block_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\block_4.vcxproj">
+      <Project>{A7CCA52A-F090-3E8C-8DAA-30637C4CFEFE}</Project>
+      <Name>block_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\block_5.vcxproj">
+      <Project>{01B7D1E0-169D-38DF-8D3B-492BA0767817}</Project>
+      <Name>block_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\block_6.vcxproj">
+      <Project>{C11FE343-BF2E-3E10-8AFA-B2D8911AAC17}</Project>
+      <Name>block_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\block_7.vcxproj">
+      <Project>{B21D98EC-2DE6-313A-BA47-D9272D4EE062}</Project>
+      <Name>block_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\block_8.vcxproj">
+      <Project>{3E4E62B9-D8FB-35E0-BABE-D56585F43D53}</Project>
+      <Name>block_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\cholesky_1.vcxproj">
+      <Project>{3C4F2723-59F1-3FF2-B02C-118E3350D271}</Project>
+      <Name>cholesky_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\cholesky_2.vcxproj">
+      <Project>{E7635BEB-3F4E-3EAB-B4B8-B66250AC7F7C}</Project>
+      <Name>cholesky_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\cholesky_3.vcxproj">
+      <Project>{5872538D-E919-3C3C-B17E-28AEFA09EE54}</Project>
+      <Name>cholesky_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\cholesky_4.vcxproj">
+      <Project>{35EB78DD-6C15-3C18-9027-D6F4006AC56E}</Project>
+      <Name>cholesky_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\cholesky_5.vcxproj">
+      <Project>{6CA86867-C56A-33B9-BF4D-B1412F42DCDC}</Project>
+      <Name>cholesky_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\cholesky_6.vcxproj">
+      <Project>{BEC16A6D-2CB6-321B-A00F-7DF8F9ADD9C0}</Project>
+      <Name>cholesky_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\cholesky_7.vcxproj">
+      <Project>{26E38976-4034-33A6-A055-41C7593E8884}</Project>
+      <Name>cholesky_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\cholesky_8.vcxproj">
+      <Project>{5F68174E-8419-39B0-A350-72F36C66758D}</Project>
+      <Name>cholesky_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\cholesky_9.vcxproj">
+      <Project>{68559F96-CEA4-3136-8E26-36A854B891A1}</Project>
+      <Name>cholesky_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\commainitializer.vcxproj">
+      <Project>{A7569450-15E0-3A90-95C6-8A6C0193F866}</Project>
+      <Name>commainitializer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\conjugate_gradient_1.vcxproj">
+      <Project>{ED490C20-8EBD-343A-9298-868B87C612AD}</Project>
+      <Name>conjugate_gradient_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\conjugate_gradient_2.vcxproj">
+      <Project>{C85B221A-0027-37B3-B004-52016DAC95D6}</Project>
+      <Name>conjugate_gradient_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\conjugate_gradient_3.vcxproj">
+      <Project>{BFA3A92F-DFC9-3668-8983-A18DA4689C0C}</Project>
+      <Name>conjugate_gradient_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\conservative_resize_1.vcxproj">
+      <Project>{A23F20A9-6CF3-3CF3-B2C0-86FAB69AEE3E}</Project>
+      <Name>conservative_resize_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\conservative_resize_2.vcxproj">
+      <Project>{CE4FE655-FD51-38BD-9A3A-19E382D54DFE}</Project>
+      <Name>conservative_resize_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\conservative_resize_3.vcxproj">
+      <Project>{F15E2721-1764-3D2C-AED3-B41DA2BEDECB}</Project>
+      <Name>conservative_resize_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\conservative_resize_4.vcxproj">
+      <Project>{CD362C50-317C-33D9-AC08-63C00A6E4A71}</Project>
+      <Name>conservative_resize_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\conservative_resize_5.vcxproj">
+      <Project>{AAFE6538-1DF0-332A-B161-E2E2B410D816}</Project>
+      <Name>conservative_resize_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\conservative_resize_6.vcxproj">
+      <Project>{DCCF32AD-D01D-39D1-82C0-4CED513AD6C3}</Project>
+      <Name>conservative_resize_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\constructor_1.vcxproj">
+      <Project>{5E84938E-4CC0-3F01-9F72-87DA7338640F}</Project>
+      <Name>constructor_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\corners_1.vcxproj">
+      <Project>{1840BD7B-32D3-3837-A083-EC59BB26D321}</Project>
+      <Name>corners_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\corners_2.vcxproj">
+      <Project>{4E2E5F9C-5238-3D7B-A797-6EA88994A695}</Project>
+      <Name>corners_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\corners_3.vcxproj">
+      <Project>{AA3B584F-9F94-3EFB-97FC-6A1336746701}</Project>
+      <Name>corners_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\corners_4.vcxproj">
+      <Project>{15C6146E-D5B6-312D-B4C2-3DD533E9E0F6}</Project>
+      <Name>corners_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\corners_5.vcxproj">
+      <Project>{5EDF3973-E0BD-3198-B37F-E04B0EC7F098}</Project>
+      <Name>corners_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\ctorleak.vcxproj">
+      <Project>{E793C78D-6C69-3E63-92F0-D174C6B2BB1F}</Project>
+      <Name>ctorleak</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\dense_storage.vcxproj">
+      <Project>{68DFC28B-4775-3C7A-8641-171F0F950AE1}</Project>
+      <Name>dense_storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\determinant_1.vcxproj">
+      <Project>{298BB7BA-3949-3D83-834F-79CBD12030F5}</Project>
+      <Name>determinant_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\determinant_2.vcxproj">
+      <Project>{29BDC3BE-B73A-3EF4-9F2A-A25D4D0832BE}</Project>
+      <Name>determinant_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\determinant_3.vcxproj">
+      <Project>{F7C56510-1180-3BDB-954F-8CF392252081}</Project>
+      <Name>determinant_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\determinant_4.vcxproj">
+      <Project>{614E7C9F-FCD7-348C-BA4F-BA630D66FCBA}</Project>
+      <Name>determinant_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\determinant_5.vcxproj">
+      <Project>{E8C2D384-4CBE-3B34-BF9F-D95702FC1F65}</Project>
+      <Name>determinant_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\determinant_6.vcxproj">
+      <Project>{05CCFD93-3CD9-379B-9098-73ED2E949D81}</Project>
+      <Name>determinant_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonal_1.vcxproj">
+      <Project>{1BA2DA27-62A1-3B41-B0C1-2ECDB477F2D6}</Project>
+      <Name>diagonal_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonal_2.vcxproj">
+      <Project>{CC63E203-8612-37F9-A187-B32B033B56C8}</Project>
+      <Name>diagonal_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonalmatrices_1.vcxproj">
+      <Project>{3A66EE8E-AA56-36FD-9346-8936FF7423FE}</Project>
+      <Name>diagonalmatrices_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonalmatrices_10.vcxproj">
+      <Project>{1062410F-7BDA-30E1-B0B2-A8FE4B6A8EF0}</Project>
+      <Name>diagonalmatrices_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonalmatrices_2.vcxproj">
+      <Project>{1D8DFA8D-4125-31DB-965B-2EFBF8B5C475}</Project>
+      <Name>diagonalmatrices_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonalmatrices_3.vcxproj">
+      <Project>{8C7934D7-B047-317C-B381-84839714B701}</Project>
+      <Name>diagonalmatrices_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonalmatrices_4.vcxproj">
+      <Project>{9C26ECFA-05F4-3E70-BEB4-EC354436CAFF}</Project>
+      <Name>diagonalmatrices_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonalmatrices_5.vcxproj">
+      <Project>{2FC448F6-DCE8-35C5-87D3-8572A836090E}</Project>
+      <Name>diagonalmatrices_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonalmatrices_6.vcxproj">
+      <Project>{E41B21B7-28B3-3582-8C73-14690859C0FA}</Project>
+      <Name>diagonalmatrices_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonalmatrices_7.vcxproj">
+      <Project>{9743C4AF-1247-3076-91A6-7622E3A3D570}</Project>
+      <Name>diagonalmatrices_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonalmatrices_8.vcxproj">
+      <Project>{19A58038-395B-389D-93B7-E9251B12A837}</Project>
+      <Name>diagonalmatrices_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\diagonalmatrices_9.vcxproj">
+      <Project>{0DF7C717-1E4E-395F-BC2B-806998C672F7}</Project>
+      <Name>diagonalmatrices_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\dontalign_1.vcxproj">
+      <Project>{89F74035-ABFC-39EB-BB00-55902579564E}</Project>
+      <Name>dontalign_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\dontalign_2.vcxproj">
+      <Project>{CADB2849-2D4A-36E0-B5E8-DC0A8E5171EE}</Project>
+      <Name>dontalign_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\dontalign_3.vcxproj">
+      <Project>{171F0390-7E86-3051-8773-D05B8391FBB0}</Project>
+      <Name>dontalign_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\dontalign_4.vcxproj">
+      <Project>{7BB297B2-97FE-3E5D-A77D-294A13B129CD}</Project>
+      <Name>dontalign_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\dontalign_5.vcxproj">
+      <Project>{3B354F3A-02BA-3D75-A6D5-20BFC18287D9}</Project>
+      <Name>dontalign_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\dontalign_6.vcxproj">
+      <Project>{41A188DE-F44C-3986-910A-8AE508A9FFD8}</Project>
+      <Name>dontalign_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\dontalign_7.vcxproj">
+      <Project>{5F803C8F-14F4-3724-AA4F-6247693CD38C}</Project>
+      <Name>dontalign_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\dontalign_8.vcxproj">
+      <Project>{DD98C904-8634-34DC-89E2-76C22F337AF6}</Project>
+      <Name>dontalign_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\dynalloc.vcxproj">
+      <Project>{13649F1A-91A1-3B3B-A517-90FB88016E16}</Project>
+      <Name>dynalloc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_complex_1.vcxproj">
+      <Project>{11AA16FF-E8AF-3222-8C81-81A51CB283D5}</Project>
+      <Name>eigensolver_complex_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_complex_2.vcxproj">
+      <Project>{A4F77DE3-22FA-35ED-9D74-39CB581062B6}</Project>
+      <Name>eigensolver_complex_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_complex_3.vcxproj">
+      <Project>{DFA6FB8C-B7F2-310E-8A9F-5C4C34C35A10}</Project>
+      <Name>eigensolver_complex_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_complex_4.vcxproj">
+      <Project>{9DBF3B4B-BC99-389F-8D62-A5605C038C69}</Project>
+      <Name>eigensolver_complex_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_complex_5.vcxproj">
+      <Project>{A03843F6-C645-3879-94C4-B72E8D56524A}</Project>
+      <Name>eigensolver_complex_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_generalized_real_1.vcxproj">
+      <Project>{4C69280C-A540-3067-820C-B2A67AF64C8E}</Project>
+      <Name>eigensolver_generalized_real_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_generalized_real_2.vcxproj">
+      <Project>{84D26D18-D7CB-334E-8710-F7CDDAE65A03}</Project>
+      <Name>eigensolver_generalized_real_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_generalized_real_3.vcxproj">
+      <Project>{7E8561EB-0C1F-33C8-9FD8-4704300656A4}</Project>
+      <Name>eigensolver_generalized_real_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_generalized_real_4.vcxproj">
+      <Project>{D58D2CD0-6556-3D03-93A0-4BCEF315513F}</Project>
+      <Name>eigensolver_generalized_real_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_generic_1.vcxproj">
+      <Project>{D0ADCAD1-9D5C-342D-A019-881A41BD4FD6}</Project>
+      <Name>eigensolver_generic_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_generic_2.vcxproj">
+      <Project>{B35CE3F5-DB1C-3876-9BC3-602F9D634840}</Project>
+      <Name>eigensolver_generic_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_generic_3.vcxproj">
+      <Project>{91D702DD-BA89-3BF3-9A24-36FFE9DF22F4}</Project>
+      <Name>eigensolver_generic_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_generic_4.vcxproj">
+      <Project>{390A0A94-2F90-3209-ADA7-4F297EBF8537}</Project>
+      <Name>eigensolver_generic_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_generic_5.vcxproj">
+      <Project>{7615DA51-C542-335D-BCB1-BB074A6F6CC5}</Project>
+      <Name>eigensolver_generic_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_selfadjoint_1.vcxproj">
+      <Project>{4DF4CD76-E240-3A3E-9706-58B4C26D8B05}</Project>
+      <Name>eigensolver_selfadjoint_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_selfadjoint_12.vcxproj">
+      <Project>{8D7D39B4-6BE8-3939-ACF5-327E9A9486B1}</Project>
+      <Name>eigensolver_selfadjoint_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_selfadjoint_13.vcxproj">
+      <Project>{286642D0-6E49-3D6C-BB3C-1914FE61BEAC}</Project>
+      <Name>eigensolver_selfadjoint_13</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_selfadjoint_2.vcxproj">
+      <Project>{7C9DB8E9-8268-3196-B7EA-63EA0621A378}</Project>
+      <Name>eigensolver_selfadjoint_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_selfadjoint_3.vcxproj">
+      <Project>{90720647-42E3-3E38-8D60-67EEA00C2B4D}</Project>
+      <Name>eigensolver_selfadjoint_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_selfadjoint_4.vcxproj">
+      <Project>{7B54A59D-BA6B-3F01-B577-3CF89F3DE511}</Project>
+      <Name>eigensolver_selfadjoint_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_selfadjoint_5.vcxproj">
+      <Project>{168D297A-4FF0-32C3-A901-C1D515997E3C}</Project>
+      <Name>eigensolver_selfadjoint_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_selfadjoint_6.vcxproj">
+      <Project>{02E53D4D-B06E-3E47-81D2-36832E322DDE}</Project>
+      <Name>eigensolver_selfadjoint_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_selfadjoint_7.vcxproj">
+      <Project>{1FA3C751-070D-3A68-BFD9-D1B7A80A5ECD}</Project>
+      <Name>eigensolver_selfadjoint_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_selfadjoint_8.vcxproj">
+      <Project>{E14FDF6E-72ED-35F9-AC36-7D37AE8C3A72}</Project>
+      <Name>eigensolver_selfadjoint_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\eigensolver_selfadjoint_9.vcxproj">
+      <Project>{00ECAA48-72B7-3D0B-BC40-4488193C0E67}</Project>
+      <Name>eigensolver_selfadjoint_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\evaluators.vcxproj">
+      <Project>{A62636DA-4C34-3208-9B0C-8F7588550799}</Project>
+      <Name>evaluators</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\exceptions.vcxproj">
+      <Project>{4037E170-C544-3B86-9AB8-CA3D46634A35}</Project>
+      <Name>exceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\fastmath.vcxproj">
+      <Project>{6A429673-4983-3FCF-9F1D-94AA54BD5419}</Project>
+      <Name>fastmath</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\first_aligned.vcxproj">
+      <Project>{5ACF4F6B-8409-3AE1-935B-BDA60333E195}</Project>
+      <Name>first_aligned</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_1.vcxproj">
+      <Project>{0322640F-6ECA-3904-A39C-CE8F4708F7E4}</Project>
+      <Name>geo_alignedbox_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_10.vcxproj">
+      <Project>{C88F1BC4-1D40-330E-8AF4-CDA8EF1B3C2E}</Project>
+      <Name>geo_alignedbox_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_11.vcxproj">
+      <Project>{65B744CC-6C8A-3078-8871-9AE6A0E9BC5B}</Project>
+      <Name>geo_alignedbox_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_12.vcxproj">
+      <Project>{C7C565AB-F77E-3483-AD2F-1E3D0D92E194}</Project>
+      <Name>geo_alignedbox_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_13.vcxproj">
+      <Project>{9A584C9B-5BB7-3D97-8F6C-1C04075429A2}</Project>
+      <Name>geo_alignedbox_13</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_14.vcxproj">
+      <Project>{6A5FD33B-061E-3CA1-B20A-A5E14DD5B053}</Project>
+      <Name>geo_alignedbox_14</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_2.vcxproj">
+      <Project>{6E41BA1C-8576-3F31-B899-24B4172C77D9}</Project>
+      <Name>geo_alignedbox_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_3.vcxproj">
+      <Project>{B0A68F67-3C12-3278-8EE5-795C81662003}</Project>
+      <Name>geo_alignedbox_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_4.vcxproj">
+      <Project>{66939477-B75F-38B0-B7DE-2D0EF69B8870}</Project>
+      <Name>geo_alignedbox_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_5.vcxproj">
+      <Project>{5045281B-9F7A-3D3B-B530-A320A71234C5}</Project>
+      <Name>geo_alignedbox_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_6.vcxproj">
+      <Project>{92BBBCB3-C540-3F37-96A9-A08B695F0F35}</Project>
+      <Name>geo_alignedbox_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_7.vcxproj">
+      <Project>{BBFA59DC-9EF2-3F2A-AE60-8AE7EF868D94}</Project>
+      <Name>geo_alignedbox_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_8.vcxproj">
+      <Project>{911FD777-AB34-393F-BE5F-6880253D80C3}</Project>
+      <Name>geo_alignedbox_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_alignedbox_9.vcxproj">
+      <Project>{506982AD-8EEA-3B11-8863-EE8FB698873C}</Project>
+      <Name>geo_alignedbox_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_eulerangles_1.vcxproj">
+      <Project>{5B94C86F-DDDD-3127-B03F-8BB575FFE2D9}</Project>
+      <Name>geo_eulerangles_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_eulerangles_2.vcxproj">
+      <Project>{83AB388C-6D8C-39D8-A9A2-BA2B798FFD21}</Project>
+      <Name>geo_eulerangles_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_homogeneous_1.vcxproj">
+      <Project>{20B2B2F8-23D5-3F8B-8D3C-0B31D220B1F3}</Project>
+      <Name>geo_homogeneous_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_homogeneous_2.vcxproj">
+      <Project>{4DC658AD-7970-3112-B7B5-84A43711458D}</Project>
+      <Name>geo_homogeneous_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_homogeneous_3.vcxproj">
+      <Project>{B3881BCF-C20B-36FF-9CC3-94915C988697}</Project>
+      <Name>geo_homogeneous_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_hyperplane_1.vcxproj">
+      <Project>{9FF1676F-43F5-3B8F-B744-3A6A5272E5F5}</Project>
+      <Name>geo_hyperplane_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_hyperplane_2.vcxproj">
+      <Project>{AF659B2F-BF5E-3B58-8EDF-FF84AAFE1476}</Project>
+      <Name>geo_hyperplane_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_hyperplane_3.vcxproj">
+      <Project>{13B5E71E-8A3B-36C2-A8D4-7ABEBA98C442}</Project>
+      <Name>geo_hyperplane_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_hyperplane_4.vcxproj">
+      <Project>{E9691F79-3C20-312F-9F0A-FEA1BD02E149}</Project>
+      <Name>geo_hyperplane_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_hyperplane_5.vcxproj">
+      <Project>{0BCEE7A4-5831-3B89-89AA-82D20FF36414}</Project>
+      <Name>geo_hyperplane_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_orthomethods_1.vcxproj">
+      <Project>{350A8A66-B692-3D67-8EC9-881E70F95847}</Project>
+      <Name>geo_orthomethods_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_orthomethods_2.vcxproj">
+      <Project>{B4FA9CB7-7327-3C88-A672-284EAC8566A3}</Project>
+      <Name>geo_orthomethods_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_orthomethods_3.vcxproj">
+      <Project>{6A6A5B01-681B-3CBD-AF87-30CD670A2CDA}</Project>
+      <Name>geo_orthomethods_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_orthomethods_4.vcxproj">
+      <Project>{CDA0271B-900C-3680-B41D-F6F1981962EA}</Project>
+      <Name>geo_orthomethods_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_orthomethods_5.vcxproj">
+      <Project>{7C19D3DF-B598-3806-8539-5FB9A8ED2F52}</Project>
+      <Name>geo_orthomethods_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_orthomethods_6.vcxproj">
+      <Project>{6012595E-6FC4-306A-82E6-8AB09630AA33}</Project>
+      <Name>geo_orthomethods_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_parametrizedline_1.vcxproj">
+      <Project>{0660C66B-A275-3C89-9C29-E7B2FA86D2FE}</Project>
+      <Name>geo_parametrizedline_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_parametrizedline_2.vcxproj">
+      <Project>{3AAFF7D6-0244-31E4-B6B0-D9D6B4A6DE98}</Project>
+      <Name>geo_parametrizedline_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_parametrizedline_3.vcxproj">
+      <Project>{D8DC4A53-E489-3339-9253-FBEC6C25E40F}</Project>
+      <Name>geo_parametrizedline_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_parametrizedline_4.vcxproj">
+      <Project>{3E231D45-37B5-31BE-8C9E-5FFFC31E1D02}</Project>
+      <Name>geo_parametrizedline_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_quaternion_1.vcxproj">
+      <Project>{B8E6F0DB-E1B7-3562-95C4-8D6A5B685E9D}</Project>
+      <Name>geo_quaternion_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_quaternion_2.vcxproj">
+      <Project>{6D459B2E-6C79-38F1-9FD7-35DDF8252910}</Project>
+      <Name>geo_quaternion_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_quaternion_3.vcxproj">
+      <Project>{8FBEFC3B-057C-33E0-BA1C-884936A7D557}</Project>
+      <Name>geo_quaternion_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_quaternion_4.vcxproj">
+      <Project>{F99DBF6B-298B-309B-B29F-50FA842BDDD2}</Project>
+      <Name>geo_quaternion_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_quaternion_5.vcxproj">
+      <Project>{FA0E8096-AEAF-3946-B291-B4076769C32A}</Project>
+      <Name>geo_quaternion_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_quaternion_6.vcxproj">
+      <Project>{348678EB-2BFF-37D8-8B47-0F167DAE701D}</Project>
+      <Name>geo_quaternion_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_transformations_1.vcxproj">
+      <Project>{832EEE54-B00B-318E-909E-F7AB1B29B72C}</Project>
+      <Name>geo_transformations_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_transformations_2.vcxproj">
+      <Project>{70987B21-B950-3972-85D0-5F855CCACB1C}</Project>
+      <Name>geo_transformations_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_transformations_3.vcxproj">
+      <Project>{1D3DA423-2AA6-33A5-9330-30D005E0D3C2}</Project>
+      <Name>geo_transformations_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_transformations_4.vcxproj">
+      <Project>{5FF79B3E-6C01-37C7-97AF-B7A0DBEC0BDE}</Project>
+      <Name>geo_transformations_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_transformations_5.vcxproj">
+      <Project>{8413DDA3-157D-36FE-AD88-3E436F38F483}</Project>
+      <Name>geo_transformations_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_transformations_6.vcxproj">
+      <Project>{5A55478D-A2D8-3620-A9C9-325AC6813DCA}</Project>
+      <Name>geo_transformations_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_transformations_7.vcxproj">
+      <Project>{FB3CDB24-9576-3F2A-89AF-25530FF97417}</Project>
+      <Name>geo_transformations_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\geo_transformations_8.vcxproj">
+      <Project>{E8D399A3-1023-3569-A8CA-ED3A25A05D9E}</Project>
+      <Name>geo_transformations_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\half_float.vcxproj">
+      <Project>{8D437F47-F14C-310B-B1BF-31242937526D}</Project>
+      <Name>half_float</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\hessenberg_1.vcxproj">
+      <Project>{64798335-C96C-38D1-9EA3-0B73D16ED43B}</Project>
+      <Name>hessenberg_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\hessenberg_2.vcxproj">
+      <Project>{E8C2A2E1-6DF6-3FED-957C-4C51FB645CEB}</Project>
+      <Name>hessenberg_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\hessenberg_3.vcxproj">
+      <Project>{D224240A-8F7A-3CA0-81B6-0E83E6CF2FF9}</Project>
+      <Name>hessenberg_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\hessenberg_4.vcxproj">
+      <Project>{E82BE425-752F-37A3-A98B-8D4B699D80E3}</Project>
+      <Name>hessenberg_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\hessenberg_5.vcxproj">
+      <Project>{9B8CB44D-B84E-3FE2-8A9B-D1754EC32883}</Project>
+      <Name>hessenberg_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\hessenberg_6.vcxproj">
+      <Project>{939A9A40-C141-3482-97EA-EB1905CD2E4C}</Project>
+      <Name>hessenberg_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\householder_1.vcxproj">
+      <Project>{93914605-4CC6-3ADC-9814-4DFB7E00A272}</Project>
+      <Name>householder_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\householder_2.vcxproj">
+      <Project>{BDD5ECA5-D119-327D-A9E9-779E72E061C2}</Project>
+      <Name>householder_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\householder_3.vcxproj">
+      <Project>{1402A92B-FE15-3F0E-A2EB-EC1CC31B28CE}</Project>
+      <Name>householder_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\householder_4.vcxproj">
+      <Project>{4EF18833-556F-337B-8FB3-9B2BC9AC5E40}</Project>
+      <Name>householder_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\householder_5.vcxproj">
+      <Project>{9D7A4E05-BB4B-312B-ACA8-F91A953AE58E}</Project>
+      <Name>householder_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\householder_6.vcxproj">
+      <Project>{83549A29-F8D9-372A-BE70-99E6138B5AF6}</Project>
+      <Name>householder_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\householder_7.vcxproj">
+      <Project>{F86C4E82-7530-3746-8881-90559D66085F}</Project>
+      <Name>householder_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\householder_8.vcxproj">
+      <Project>{D1985582-34B4-313D-8EC3-9588BA26E7D3}</Project>
+      <Name>householder_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\incomplete_cholesky_1.vcxproj">
+      <Project>{88794794-8868-36C0-BA17-F69DFB350241}</Project>
+      <Name>incomplete_cholesky_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\incomplete_cholesky_2.vcxproj">
+      <Project>{090C5094-EF12-31D2-BB1A-9D92C3B24E49}</Project>
+      <Name>incomplete_cholesky_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\incomplete_cholesky_3.vcxproj">
+      <Project>{CD4CE863-14DC-3820-840F-AADD69DB538A}</Project>
+      <Name>incomplete_cholesky_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inplace_decomposition_1.vcxproj">
+      <Project>{F103E9D6-F4F5-31C4-893E-449662DA29D5}</Project>
+      <Name>inplace_decomposition_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inplace_decomposition_2.vcxproj">
+      <Project>{ACA3273D-4755-3CA7-A20E-9E76C9746072}</Project>
+      <Name>inplace_decomposition_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inplace_decomposition_3.vcxproj">
+      <Project>{5C544CDD-C7EF-37D4-A50D-D75F113EF474}</Project>
+      <Name>inplace_decomposition_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inplace_decomposition_4.vcxproj">
+      <Project>{135BF2C8-64E4-3A26-931D-2FF2F3618320}</Project>
+      <Name>inplace_decomposition_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inplace_decomposition_5.vcxproj">
+      <Project>{D7FBC1AB-7A77-3C59-B825-29B8F4C75FD3}</Project>
+      <Name>inplace_decomposition_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inplace_decomposition_6.vcxproj">
+      <Project>{0CE2F9E9-112E-333F-AAD0-099AE7929E55}</Project>
+      <Name>inplace_decomposition_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inplace_decomposition_7.vcxproj">
+      <Project>{099C62B7-5F2B-3FBC-9821-294B483080A9}</Project>
+      <Name>inplace_decomposition_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inplace_decomposition_8.vcxproj">
+      <Project>{90D6A485-F961-3DE2-8D26-6990383C4B74}</Project>
+      <Name>inplace_decomposition_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\integer_types_1.vcxproj">
+      <Project>{D46E2BFB-0F8B-393D-8ACB-D8AA60042445}</Project>
+      <Name>integer_types_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\integer_types_2.vcxproj">
+      <Project>{E3E7AFBD-A434-392B-8A2D-5EF7E8C7BEC6}</Project>
+      <Name>integer_types_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\integer_types_3.vcxproj">
+      <Project>{616BA7C3-1C7B-3E04-A138-16FD6DB4DDDC}</Project>
+      <Name>integer_types_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\integer_types_4.vcxproj">
+      <Project>{D0AF9721-B1DF-3B51-94DD-9F66B4F0A815}</Project>
+      <Name>integer_types_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\integer_types_5.vcxproj">
+      <Project>{75FB3637-96D1-3144-9C44-9197969AF7D8}</Project>
+      <Name>integer_types_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\integer_types_6.vcxproj">
+      <Project>{7E798CBB-13AD-3EAB-8DF4-894A562B0C9D}</Project>
+      <Name>integer_types_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\integer_types_7.vcxproj">
+      <Project>{818D5074-06EF-3892-ADB4-0D01B2168CB9}</Project>
+      <Name>integer_types_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\integer_types_8.vcxproj">
+      <Project>{6663BC00-1B18-3C0C-998E-4363C1773982}</Project>
+      <Name>integer_types_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\integer_types_9.vcxproj">
+      <Project>{9A4FCD36-18BE-34F9-A6A5-E0C8126DF270}</Project>
+      <Name>integer_types_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inverse_1.vcxproj">
+      <Project>{5EAC5314-0A01-3218-A70D-E78C3AD6402E}</Project>
+      <Name>inverse_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inverse_2.vcxproj">
+      <Project>{31DAA9D8-F4BF-3F06-92AF-79E572CC7B50}</Project>
+      <Name>inverse_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inverse_3.vcxproj">
+      <Project>{2FFD32D7-4454-3D4E-A787-736C881A1313}</Project>
+      <Name>inverse_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inverse_4.vcxproj">
+      <Project>{4492B13D-4182-325F-917C-F86C355DAF20}</Project>
+      <Name>inverse_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inverse_5.vcxproj">
+      <Project>{3CFA1E38-832C-330C-8E96-B5EB23F64754}</Project>
+      <Name>inverse_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inverse_6.vcxproj">
+      <Project>{95A6D168-42FF-30E9-B670-9A9A17C880C5}</Project>
+      <Name>inverse_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inverse_7.vcxproj">
+      <Project>{53571925-709B-312F-9470-2A97B224D127}</Project>
+      <Name>inverse_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\inverse_8.vcxproj">
+      <Project>{E9FF5906-E7D0-38F0-AEBF-71A9C5353350}</Project>
+      <Name>inverse_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\is_same_dense.vcxproj">
+      <Project>{F43683F9-C8DC-398E-A272-FDBB2DA88A43}</Project>
+      <Name>is_same_dense</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobi_1.vcxproj">
+      <Project>{933DC434-7BC5-3D9F-8E86-736D20344E1A}</Project>
+      <Name>jacobi_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobi_2.vcxproj">
+      <Project>{798065FD-E8CD-3BC7-97AD-631B8C4115FA}</Project>
+      <Name>jacobi_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobi_3.vcxproj">
+      <Project>{EADC7331-93AD-33C8-87E2-2FC2AEB1DC95}</Project>
+      <Name>jacobi_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobi_4.vcxproj">
+      <Project>{DED69889-449C-3F82-9E51-88372C72A3E4}</Project>
+      <Name>jacobi_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobi_5.vcxproj">
+      <Project>{7058D675-D50B-3B4B-BF2B-5E0758CE38E6}</Project>
+      <Name>jacobi_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobi_6.vcxproj">
+      <Project>{95B23361-089C-3917-858E-8E420F7EC980}</Project>
+      <Name>jacobi_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_1.vcxproj">
+      <Project>{20E27894-1DC9-3767-A5E0-3A0323444AC9}</Project>
+      <Name>jacobisvd_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_10.vcxproj">
+      <Project>{F62009A3-08D0-307F-8B16-678B5D0AD788}</Project>
+      <Name>jacobisvd_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_11.vcxproj">
+      <Project>{2F3821CA-D704-3A38-9469-EDF08F5ED8D8}</Project>
+      <Name>jacobisvd_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_12.vcxproj">
+      <Project>{E4BDEB51-ACBA-3B7A-9515-F0EFF72AAF1E}</Project>
+      <Name>jacobisvd_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_13.vcxproj">
+      <Project>{7627FF69-12D8-3043-BD10-1444620E860B}</Project>
+      <Name>jacobisvd_13</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_2.vcxproj">
+      <Project>{788584FB-5606-3E1F-AD41-CE0A348B40EC}</Project>
+      <Name>jacobisvd_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_3.vcxproj">
+      <Project>{F40BF48C-10DC-3D73-80F5-F0398DCC1757}</Project>
+      <Name>jacobisvd_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_4.vcxproj">
+      <Project>{355A76E4-CACF-3A4B-A37B-2F05227A2E38}</Project>
+      <Name>jacobisvd_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_5.vcxproj">
+      <Project>{FF5742AE-6F6C-3BA7-8A79-0D4713801CA1}</Project>
+      <Name>jacobisvd_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_6.vcxproj">
+      <Project>{1B95BEE5-E0AC-35E5-AAEF-8016BE6818F9}</Project>
+      <Name>jacobisvd_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_7.vcxproj">
+      <Project>{4D0311FD-4479-36AF-971D-EEEF955E7ECA}</Project>
+      <Name>jacobisvd_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_8.vcxproj">
+      <Project>{EEDA080A-D2EF-3E76-9F25-2595DF1836FC}</Project>
+      <Name>jacobisvd_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\jacobisvd_9.vcxproj">
+      <Project>{173DF50A-DE69-302E-BA3A-F5B84A1E8698}</Project>
+      <Name>jacobisvd_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\linearstructure_1.vcxproj">
+      <Project>{ED6DED41-1858-3E76-9243-1F3405BE4A4E}</Project>
+      <Name>linearstructure_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\linearstructure_10.vcxproj">
+      <Project>{43E553E7-CA24-3F27-BD9F-51CFB1167156}</Project>
+      <Name>linearstructure_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\linearstructure_11.vcxproj">
+      <Project>{9845BB49-9A87-3FF7-8E7F-05CAE7238837}</Project>
+      <Name>linearstructure_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\linearstructure_2.vcxproj">
+      <Project>{72493B2A-DFB5-3733-AAFC-C103C5B1DD77}</Project>
+      <Name>linearstructure_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\linearstructure_3.vcxproj">
+      <Project>{9EAE92FB-253A-37DE-B68A-F663102617E3}</Project>
+      <Name>linearstructure_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\linearstructure_4.vcxproj">
+      <Project>{9AA74580-3AC5-3A6B-A71A-638BAA9CA549}</Project>
+      <Name>linearstructure_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\linearstructure_5.vcxproj">
+      <Project>{B5B5581F-1BDD-34B3-AA6E-892821B2F48C}</Project>
+      <Name>linearstructure_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\linearstructure_6.vcxproj">
+      <Project>{C073F261-D29D-3695-9708-D90C01292BF3}</Project>
+      <Name>linearstructure_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\linearstructure_7.vcxproj">
+      <Project>{FCEE74B1-735F-3D65-8DDD-C844D9D54259}</Project>
+      <Name>linearstructure_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\linearstructure_8.vcxproj">
+      <Project>{B1E3EB4C-154F-384F-A462-91E8A219C3FF}</Project>
+      <Name>linearstructure_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\linearstructure_9.vcxproj">
+      <Project>{ED99F62F-745B-3943-8339-6717374B8961}</Project>
+      <Name>linearstructure_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\lscg_1.vcxproj">
+      <Project>{1973DEE8-9C8C-36AD-BC76-8A18A2698F88}</Project>
+      <Name>lscg_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\lscg_2.vcxproj">
+      <Project>{D0D02D37-8345-3D4C-B56E-9A9C1D370BBA}</Project>
+      <Name>lscg_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\lu_1.vcxproj">
+      <Project>{11540259-1CDF-33BE-B476-D56B86AD5985}</Project>
+      <Name>lu_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\lu_2.vcxproj">
+      <Project>{5EA6EC18-A446-3E9C-A05A-FE59DBC133B9}</Project>
+      <Name>lu_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\lu_3.vcxproj">
+      <Project>{2BC2350D-0AC1-3407-9124-58CD21B9BC68}</Project>
+      <Name>lu_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\lu_4.vcxproj">
+      <Project>{78C29A22-D341-3446-9702-F50A9570461E}</Project>
+      <Name>lu_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\lu_5.vcxproj">
+      <Project>{6A5577FE-F0DE-3918-A51E-B4A70A612377}</Project>
+      <Name>lu_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\lu_6.vcxproj">
+      <Project>{7928B4C1-2812-3183-9BFB-F453B364B06F}</Project>
+      <Name>lu_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\lu_7.vcxproj">
+      <Project>{155D0B29-F77B-3DDB-A9EC-77C45ED79CB5}</Project>
+      <Name>lu_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\lu_9.vcxproj">
+      <Project>{35F566B0-03E2-3883-97DF-646B6EF749AF}</Project>
+      <Name>lu_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapped_matrix_1.vcxproj">
+      <Project>{2F667EC8-0593-3938-83DB-D8D7EBFAF96E}</Project>
+      <Name>mapped_matrix_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapped_matrix_10.vcxproj">
+      <Project>{0B911222-3357-3BA3-BF12-40F39BF0B3F2}</Project>
+      <Name>mapped_matrix_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapped_matrix_11.vcxproj">
+      <Project>{50B79FF6-A6A3-3034-AEDD-6F0810771FB0}</Project>
+      <Name>mapped_matrix_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapped_matrix_2.vcxproj">
+      <Project>{0B154D4B-A8D2-3A99-955B-006674CF29C1}</Project>
+      <Name>mapped_matrix_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapped_matrix_3.vcxproj">
+      <Project>{78E1E299-DA8C-3958-82C1-59AB36E39063}</Project>
+      <Name>mapped_matrix_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapped_matrix_4.vcxproj">
+      <Project>{9CB7850C-3EB0-32D8-AF79-529278FF119A}</Project>
+      <Name>mapped_matrix_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapped_matrix_5.vcxproj">
+      <Project>{1FBD3ED3-E7B3-33F7-BBA1-2681A5EC475C}</Project>
+      <Name>mapped_matrix_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapped_matrix_6.vcxproj">
+      <Project>{EA90928A-D77E-387D-BAF3-ADBA6FBA2BEA}</Project>
+      <Name>mapped_matrix_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapped_matrix_7.vcxproj">
+      <Project>{DE7E8120-C5C0-36B9-9226-0A688AB57B9A}</Project>
+      <Name>mapped_matrix_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapped_matrix_8.vcxproj">
+      <Project>{9308E415-CCC3-3467-A40C-17372EEB9A5B}</Project>
+      <Name>mapped_matrix_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapped_matrix_9.vcxproj">
+      <Project>{BE5FE0D8-AE85-3AB2-9995-854168AE9281}</Project>
+      <Name>mapped_matrix_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstaticmethods_1.vcxproj">
+      <Project>{53C18352-19A6-376E-AC68-7B0ED438EC5E}</Project>
+      <Name>mapstaticmethods_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstaticmethods_2.vcxproj">
+      <Project>{BE2BBEC9-4D64-3EB4-B0C3-7DAA4FE13D64}</Project>
+      <Name>mapstaticmethods_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstaticmethods_3.vcxproj">
+      <Project>{21E2CA44-4A43-31B7-9BF2-C0710A780EB5}</Project>
+      <Name>mapstaticmethods_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstaticmethods_4.vcxproj">
+      <Project>{62ED98A5-0E09-3075-8D94-BD2CDC90A60C}</Project>
+      <Name>mapstaticmethods_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstaticmethods_5.vcxproj">
+      <Project>{FD61988C-0CB8-30B0-9730-3725C3D9F2D5}</Project>
+      <Name>mapstaticmethods_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstaticmethods_6.vcxproj">
+      <Project>{1477A971-8E05-3A88-9E9D-54CD18C77676}</Project>
+      <Name>mapstaticmethods_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstaticmethods_7.vcxproj">
+      <Project>{EED50204-0407-3435-AA2F-BE69DC33E96C}</Project>
+      <Name>mapstaticmethods_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstaticmethods_8.vcxproj">
+      <Project>{D87AB5CE-0F2F-3BF6-90B5-2B4EDE890157}</Project>
+      <Name>mapstaticmethods_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstride_1.vcxproj">
+      <Project>{FB64AB4E-FD24-3D7B-BFAD-F4AEA3D1DE35}</Project>
+      <Name>mapstride_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstride_2.vcxproj">
+      <Project>{7B613BB0-599A-34DB-AAEC-F1A878800895}</Project>
+      <Name>mapstride_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstride_3.vcxproj">
+      <Project>{D26BB1D3-07F6-3360-9C41-87C8A882D571}</Project>
+      <Name>mapstride_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstride_4.vcxproj">
+      <Project>{7007C845-7B68-368E-ABF9-B6D6DBD32D9C}</Project>
+      <Name>mapstride_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstride_5.vcxproj">
+      <Project>{89DB8EB0-11E0-31F1-B927-AB138F341715}</Project>
+      <Name>mapstride_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mapstride_6.vcxproj">
+      <Project>{32E710D2-8A2A-3E76-A0F8-D2FD26AAE68D}</Project>
+      <Name>mapstride_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\meta.vcxproj">
+      <Project>{6636AD90-7C9E-3E36-B3BD-B199251FFCCD}</Project>
+      <Name>meta</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\miscmatrices_1.vcxproj">
+      <Project>{460B48ED-9017-3146-ADC6-0402E5F4BAE8}</Project>
+      <Name>miscmatrices_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\miscmatrices_2.vcxproj">
+      <Project>{D19C40FB-DD8E-3ED6-BFA5-64B80ADC6407}</Project>
+      <Name>miscmatrices_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\miscmatrices_3.vcxproj">
+      <Project>{398177E1-536E-3380-819A-4754DD8FDE5A}</Project>
+      <Name>miscmatrices_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\miscmatrices_4.vcxproj">
+      <Project>{806E2667-EAEA-3057-9BE3-4F3011100A67}</Project>
+      <Name>miscmatrices_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\miscmatrices_5.vcxproj">
+      <Project>{E167F9E5-98D2-34AA-8FEA-FCF93ED2DE4E}</Project>
+      <Name>miscmatrices_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mixingtypes_1.vcxproj">
+      <Project>{1207CD2A-F507-3B80-B567-567F3FD194BE}</Project>
+      <Name>mixingtypes_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mixingtypes_2.vcxproj">
+      <Project>{0AFC3B75-D72E-34B3-9811-018618B5A3AB}</Project>
+      <Name>mixingtypes_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mixingtypes_3.vcxproj">
+      <Project>{2FFFF410-429E-39E3-9417-A6FBEA92C7BE}</Project>
+      <Name>mixingtypes_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mixingtypes_4.vcxproj">
+      <Project>{0AEF58C8-CC4D-35BA-852F-E550FAC492C0}</Project>
+      <Name>mixingtypes_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mixingtypes_5.vcxproj">
+      <Project>{0EF0166C-ACCA-3A9C-8B94-610D2FB40871}</Project>
+      <Name>mixingtypes_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mixingtypes_6.vcxproj">
+      <Project>{F674B98D-3AFA-3965-A065-0EB71924E070}</Project>
+      <Name>mixingtypes_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mixingtypes_7.vcxproj">
+      <Project>{3900D113-AF64-3514-A178-ED68B7C1FC27}</Project>
+      <Name>mixingtypes_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\mpl2only.vcxproj">
+      <Project>{233893A3-B82C-35C4-872A-BB2FEA4CB986}</Project>
+      <Name>mpl2only</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nesting_ops_1.vcxproj">
+      <Project>{C3802471-0D70-3B49-8F16-A355CBFF6D76}</Project>
+      <Name>nesting_ops_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nesting_ops_2.vcxproj">
+      <Project>{365D6173-B133-3B0F-ABB9-01F11077B948}</Project>
+      <Name>nesting_ops_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nesting_ops_3.vcxproj">
+      <Project>{F644918F-B07C-3893-BD3B-BF8F26145F6F}</Project>
+      <Name>nesting_ops_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nesting_ops_4.vcxproj">
+      <Project>{BF9BAD43-B3D1-3D48-A3AA-FA35C919AFFE}</Project>
+      <Name>nesting_ops_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nomalloc_1.vcxproj">
+      <Project>{3E9559FD-207D-35E6-B61B-6BD58EE5D1E0}</Project>
+      <Name>nomalloc_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nomalloc_2.vcxproj">
+      <Project>{0F1B278F-F7E3-31CB-BAA3-7780EECB6937}</Project>
+      <Name>nomalloc_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nomalloc_3.vcxproj">
+      <Project>{4F4D8159-BBD6-3CD7-924C-A8D5C5D36FC3}</Project>
+      <Name>nomalloc_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nomalloc_4.vcxproj">
+      <Project>{92EE6C2E-83CB-35FD-8E1A-12D2D84DE183}</Project>
+      <Name>nomalloc_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nomalloc_5.vcxproj">
+      <Project>{2D4CDBB7-127C-3AC0-8202-35D9D2EC8FB2}</Project>
+      <Name>nomalloc_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nomalloc_6.vcxproj">
+      <Project>{4E7E528A-F02B-3E2A-B6EF-CC3A27F5FBE8}</Project>
+      <Name>nomalloc_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nomalloc_7.vcxproj">
+      <Project>{EDFFABF8-181B-38DC-A52C-DD7A7959806F}</Project>
+      <Name>nomalloc_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nomalloc_8.vcxproj">
+      <Project>{D3683941-E6A6-3E89-B9DA-208A40F05066}</Project>
+      <Name>nomalloc_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nullary_1.vcxproj">
+      <Project>{09B46A85-9BA2-33BA-BE9B-E9508EEE44E2}</Project>
+      <Name>nullary_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nullary_10.vcxproj">
+      <Project>{B7A16AEF-F519-3D69-A348-89FCE2561B00}</Project>
+      <Name>nullary_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nullary_2.vcxproj">
+      <Project>{87B45637-E7D2-37D5-B4E1-9AF064C258F8}</Project>
+      <Name>nullary_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nullary_3.vcxproj">
+      <Project>{F8FDF415-F384-36DE-9CCE-A1D2C34D5A0E}</Project>
+      <Name>nullary_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nullary_4.vcxproj">
+      <Project>{2C722AD4-38AF-3519-8E6F-DBCE99FA958E}</Project>
+      <Name>nullary_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nullary_5.vcxproj">
+      <Project>{81641895-2FC6-36D2-BE5E-98B2F5915F71}</Project>
+      <Name>nullary_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nullary_6.vcxproj">
+      <Project>{3DB3A584-E404-3C21-8CC8-FA61CA0EF43B}</Project>
+      <Name>nullary_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nullary_7.vcxproj">
+      <Project>{131D7010-8398-3E5A-B900-E3626375F799}</Project>
+      <Name>nullary_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nullary_8.vcxproj">
+      <Project>{64F974A3-C901-3714-ADEF-B4C5C33EE8D6}</Project>
+      <Name>nullary_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\nullary_9.vcxproj">
+      <Project>{76090DAD-5E29-3B34-A425-16421FFBACB4}</Project>
+      <Name>nullary_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\numext.vcxproj">
+      <Project>{3A206BE3-A248-3A94-8385-BE595CCE89AC}</Project>
+      <Name>numext</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\packetmath_1.vcxproj">
+      <Project>{DBB19395-C1A8-3B6D-9C9C-25AF7963C9C0}</Project>
+      <Name>packetmath_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\packetmath_2.vcxproj">
+      <Project>{A18B19A8-9252-3690-818D-A1D24CE8025B}</Project>
+      <Name>packetmath_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\packetmath_3.vcxproj">
+      <Project>{51161FC0-3247-3D05-BFA4-DADBB47B8E1E}</Project>
+      <Name>packetmath_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\packetmath_4.vcxproj">
+      <Project>{5236A318-E82E-31D2-B678-EB4D84096B10}</Project>
+      <Name>packetmath_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\packetmath_5.vcxproj">
+      <Project>{FF2CB93F-9A9A-3836-A962-2CE587D8FCC6}</Project>
+      <Name>packetmath_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\permutationmatrices_1.vcxproj">
+      <Project>{F472C248-4900-3A1C-A188-A6AD9F777A06}</Project>
+      <Name>permutationmatrices_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\permutationmatrices_2.vcxproj">
+      <Project>{8FC9360B-1581-3A7F-AE69-F51BF4CE62B8}</Project>
+      <Name>permutationmatrices_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\permutationmatrices_3.vcxproj">
+      <Project>{CA417365-3C98-34D8-A9E5-7F95B39AA29C}</Project>
+      <Name>permutationmatrices_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\permutationmatrices_4.vcxproj">
+      <Project>{D2CE9D46-173F-3F79-A894-BE9054C2B554}</Project>
+      <Name>permutationmatrices_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\permutationmatrices_5.vcxproj">
+      <Project>{F8B8B9FD-8667-38CA-84E9-F87ED522B889}</Project>
+      <Name>permutationmatrices_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\permutationmatrices_6.vcxproj">
+      <Project>{53DAD0B0-3BA9-39C6-9093-83703CCC75DB}</Project>
+      <Name>permutationmatrices_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\permutationmatrices_7.vcxproj">
+      <Project>{E8CF20E4-A82E-3FFF-9A2C-A4583C602664}</Project>
+      <Name>permutationmatrices_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\prec_inverse_4x4_1.vcxproj">
+      <Project>{A0A24004-EC2D-3107-A53D-FCA7ABFA2B4B}</Project>
+      <Name>prec_inverse_4x4_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\prec_inverse_4x4_2.vcxproj">
+      <Project>{6BA8DE5C-1895-394B-979B-B1F7B51F35C7}</Project>
+      <Name>prec_inverse_4x4_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\prec_inverse_4x4_3.vcxproj">
+      <Project>{ABDA395A-9A91-3B57-AC8E-C4E457C284FD}</Project>
+      <Name>prec_inverse_4x4_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_extra_1.vcxproj">
+      <Project>{3E8D6036-9F0E-326E-9DA4-E9526BC3359F}</Project>
+      <Name>product_extra_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_extra_2.vcxproj">
+      <Project>{2ABE11B2-D289-383F-A751-6651D0200118}</Project>
+      <Name>product_extra_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_extra_3.vcxproj">
+      <Project>{66F99A06-4EA6-315A-A5B2-B744F956C275}</Project>
+      <Name>product_extra_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_extra_4.vcxproj">
+      <Project>{DFFDC033-448E-3BC6-B180-91D980864F8F}</Project>
+      <Name>product_extra_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_extra_5.vcxproj">
+      <Project>{B9D5173A-7D7E-303D-8F80-78F6C22FBDE5}</Project>
+      <Name>product_extra_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_extra_6.vcxproj">
+      <Project>{71DBCA16-216C-3FA1-BC1E-CE317B5D2238}</Project>
+      <Name>product_extra_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_extra_7.vcxproj">
+      <Project>{E1751A54-E9B3-3D06-870F-310A719FA458}</Project>
+      <Name>product_extra_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_extra_8.vcxproj">
+      <Project>{4A86C020-B1F4-3FE4-AD12-7CB4962C53F5}</Project>
+      <Name>product_extra_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_large_1.vcxproj">
+      <Project>{C64F6EE1-65CB-3216-9359-835DBCD10412}</Project>
+      <Name>product_large_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_large_2.vcxproj">
+      <Project>{B938C064-0465-38F2-8A66-5E07BB08A885}</Project>
+      <Name>product_large_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_large_3.vcxproj">
+      <Project>{7141A831-A8F1-3E64-836B-334ADE214708}</Project>
+      <Name>product_large_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_large_4.vcxproj">
+      <Project>{EC5945C0-D48A-3782-A697-E4E99F1D8F86}</Project>
+      <Name>product_large_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_large_5.vcxproj">
+      <Project>{7AB8FDCF-52D7-3582-90E1-A67B1188BE65}</Project>
+      <Name>product_large_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_large_6.vcxproj">
+      <Project>{026DC814-B1E7-3B2E-896A-69F23EB89087}</Project>
+      <Name>product_large_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_mmtr_1.vcxproj">
+      <Project>{5AC536C1-28D6-300F-9632-AD936EA8D1A2}</Project>
+      <Name>product_mmtr_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_mmtr_2.vcxproj">
+      <Project>{2960BC1C-624F-3BA0-B259-D935E4752722}</Project>
+      <Name>product_mmtr_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_mmtr_3.vcxproj">
+      <Project>{DACA33C9-C203-340E-9549-C9E13927603A}</Project>
+      <Name>product_mmtr_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_mmtr_4.vcxproj">
+      <Project>{C3CC6620-7017-3B77-A91A-4ADEAD3AFA77}</Project>
+      <Name>product_mmtr_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_notemporary_1.vcxproj">
+      <Project>{3803BE84-F645-3B52-ABE4-D948B14BCC4A}</Project>
+      <Name>product_notemporary_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_notemporary_2.vcxproj">
+      <Project>{8B4AE2B6-E2F3-3315-978A-BC18F3AA23B6}</Project>
+      <Name>product_notemporary_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_notemporary_3.vcxproj">
+      <Project>{947BABD6-FC52-3737-A7AC-0F37AE10353C}</Project>
+      <Name>product_notemporary_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_notemporary_4.vcxproj">
+      <Project>{476D84A7-BF7E-3B5B-A708-CAAA33967829}</Project>
+      <Name>product_notemporary_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_selfadjoint_1.vcxproj">
+      <Project>{B435DBD7-FCF9-397D-8FB3-37E7FF2B35CA}</Project>
+      <Name>product_selfadjoint_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_selfadjoint_2.vcxproj">
+      <Project>{C7F0CCC2-5899-3D49-926B-77DD46DF9667}</Project>
+      <Name>product_selfadjoint_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_selfadjoint_3.vcxproj">
+      <Project>{156CD8B9-220E-32DE-BD77-042C0B2EC7B7}</Project>
+      <Name>product_selfadjoint_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_selfadjoint_4.vcxproj">
+      <Project>{34570AB8-6C10-340F-8B98-D8182DCFDA19}</Project>
+      <Name>product_selfadjoint_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_selfadjoint_5.vcxproj">
+      <Project>{75953B19-93CB-3DE0-B983-E9AAB4E5F773}</Project>
+      <Name>product_selfadjoint_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_selfadjoint_6.vcxproj">
+      <Project>{AE340657-B4CD-377B-AC7E-0E904BE9DF40}</Project>
+      <Name>product_selfadjoint_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_selfadjoint_7.vcxproj">
+      <Project>{5AA04298-4196-3608-8335-C3A4C468C0B1}</Project>
+      <Name>product_selfadjoint_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_1.vcxproj">
+      <Project>{9A71065A-8196-3E7F-AE91-837ED54465F9}</Project>
+      <Name>product_small_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_11.vcxproj">
+      <Project>{EAF54792-5838-3793-B911-9FF39C384D41}</Project>
+      <Name>product_small_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_12.vcxproj">
+      <Project>{2C0DD7C3-6E71-391A-864D-1D55B71C0A7C}</Project>
+      <Name>product_small_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_13.vcxproj">
+      <Project>{5F6BD02A-FA41-3352-91E5-57F9C02C2CBB}</Project>
+      <Name>product_small_13</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_2.vcxproj">
+      <Project>{D10491B5-7D1C-3A62-A5F3-FB5169B6E788}</Project>
+      <Name>product_small_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_21.vcxproj">
+      <Project>{83335F2F-8FA2-3CBD-97D2-9D71EC590815}</Project>
+      <Name>product_small_21</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_22.vcxproj">
+      <Project>{C8E0A8F6-46D2-3EFA-B66C-2EF6F86106A7}</Project>
+      <Name>product_small_22</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_23.vcxproj">
+      <Project>{1531A8F7-8D65-3A3B-BBAE-84FEBB9D3BEF}</Project>
+      <Name>product_small_23</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_3.vcxproj">
+      <Project>{D32F9D4E-C792-3958-8628-01D68F44FD02}</Project>
+      <Name>product_small_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_31.vcxproj">
+      <Project>{1D728AD3-38E5-3CA8-AB7D-784774D1275B}</Project>
+      <Name>product_small_31</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_32.vcxproj">
+      <Project>{41A577C4-E235-3429-B1FD-74068769DD27}</Project>
+      <Name>product_small_32</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_33.vcxproj">
+      <Project>{81ABD409-E36B-34EE-BC13-2D87FEE6429C}</Project>
+      <Name>product_small_33</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_4.vcxproj">
+      <Project>{DA845A68-BD72-39C5-B869-3CF2FAFB4D5E}</Project>
+      <Name>product_small_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_41.vcxproj">
+      <Project>{4B44A638-401B-3958-95E9-AF9BFE36513C}</Project>
+      <Name>product_small_41</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_42.vcxproj">
+      <Project>{3048CE74-F445-357B-8455-D94E54C5D302}</Project>
+      <Name>product_small_42</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_43.vcxproj">
+      <Project>{97770ECD-F14E-378C-AD6F-8B95D8C12CAB}</Project>
+      <Name>product_small_43</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_5.vcxproj">
+      <Project>{DC14E4D5-F171-3EED-B745-2199015C6BC2}</Project>
+      <Name>product_small_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_6.vcxproj">
+      <Project>{ED73AE2F-27C4-3B48-AAA3-8AB65A039B72}</Project>
+      <Name>product_small_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_7.vcxproj">
+      <Project>{C1551A0D-7831-3280-A18D-29F4BD671523}</Project>
+      <Name>product_small_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_small_8.vcxproj">
+      <Project>{21CAB6CC-5AB4-3D84-9CC5-72DB512B220A}</Project>
+      <Name>product_small_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_symm_1.vcxproj">
+      <Project>{66E06712-A903-30B8-BDE3-148B671F1BEE}</Project>
+      <Name>product_symm_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_symm_2.vcxproj">
+      <Project>{9D183790-5028-3D35-93D9-E198C5168293}</Project>
+      <Name>product_symm_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_symm_3.vcxproj">
+      <Project>{8B6B257B-4C94-3589-8A98-603584C18A58}</Project>
+      <Name>product_symm_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_symm_4.vcxproj">
+      <Project>{C3BFAECD-E65B-37F3-BAFE-428B468E2864}</Project>
+      <Name>product_symm_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_symm_5.vcxproj">
+      <Project>{A4F1762C-EA1E-37C6-BFFD-3897AE7EBA34}</Project>
+      <Name>product_symm_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_symm_6.vcxproj">
+      <Project>{F6C582F9-2207-3611-8555-F4D28B035AFF}</Project>
+      <Name>product_symm_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_symm_7.vcxproj">
+      <Project>{357420F7-51E2-319B-B469-C7332EF080CD}</Project>
+      <Name>product_symm_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_symm_8.vcxproj">
+      <Project>{548C4D16-DCF4-3804-807F-8AF8F227E89C}</Project>
+      <Name>product_symm_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_syrk_1.vcxproj">
+      <Project>{CC16B0D8-4F51-31A2-85B4-D5651D66FD6A}</Project>
+      <Name>product_syrk_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_syrk_2.vcxproj">
+      <Project>{B6585AE4-F93C-34B2-ABEB-0623ADEBC79C}</Project>
+      <Name>product_syrk_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_syrk_3.vcxproj">
+      <Project>{47977747-D844-3CED-9082-A29C7C499622}</Project>
+      <Name>product_syrk_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_syrk_4.vcxproj">
+      <Project>{6735684F-6A1B-3D4E-A04C-FBE4285A9F27}</Project>
+      <Name>product_syrk_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_1.vcxproj">
+      <Project>{848FFA3E-378B-3B52-8976-BB8B8831B0B3}</Project>
+      <Name>product_trmm_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_11.vcxproj">
+      <Project>{2812A64F-16CD-3000-BD50-CF30AF77C594}</Project>
+      <Name>product_trmm_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_111.vcxproj">
+      <Project>{B3EAC3D2-26E1-36F0-A0FF-504024D1E0B1}</Project>
+      <Name>product_trmm_111</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_112.vcxproj">
+      <Project>{29FFB93E-CFA8-3E32-B4D9-902EF6174D4E}</Project>
+      <Name>product_trmm_112</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_113.vcxproj">
+      <Project>{CB30AD61-4B37-3B2D-8F75-533F64EA0FE8}</Project>
+      <Name>product_trmm_113</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_114.vcxproj">
+      <Project>{A8EE2CB8-5A8B-32E7-B668-AA1FE585A66D}</Project>
+      <Name>product_trmm_114</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_12.vcxproj">
+      <Project>{27A4126B-4214-3098-8475-EEAB66619A1F}</Project>
+      <Name>product_trmm_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_121.vcxproj">
+      <Project>{8A0839AC-A649-3596-B276-A43DF6463CB1}</Project>
+      <Name>product_trmm_121</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_122.vcxproj">
+      <Project>{A1F0B17F-076E-3F11-855B-56D8A608E249}</Project>
+      <Name>product_trmm_122</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_123.vcxproj">
+      <Project>{7448B60B-4216-3839-B9F8-4108FFBA9751}</Project>
+      <Name>product_trmm_123</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_124.vcxproj">
+      <Project>{312753EF-6816-3331-8263-6771D2096D33}</Project>
+      <Name>product_trmm_124</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_13.vcxproj">
+      <Project>{52FBAB84-2D90-3FBC-92E8-4D73F88F8E89}</Project>
+      <Name>product_trmm_13</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_131.vcxproj">
+      <Project>{8E4E483A-95C4-3102-8F8E-1A5FE14E77FE}</Project>
+      <Name>product_trmm_131</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_132.vcxproj">
+      <Project>{9EB24AE3-C6B8-3DA7-8EDE-F51820E07CC6}</Project>
+      <Name>product_trmm_132</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_133.vcxproj">
+      <Project>{5ED75686-0B7F-3B54-80EF-B0A41C1AF34B}</Project>
+      <Name>product_trmm_133</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_134.vcxproj">
+      <Project>{BC212347-A79E-3FE1-82FA-5637FEC5A8F8}</Project>
+      <Name>product_trmm_134</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_14.vcxproj">
+      <Project>{81619E10-CD46-31FD-8E50-C3905BED1455}</Project>
+      <Name>product_trmm_14</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_21.vcxproj">
+      <Project>{17664888-CA50-3C20-A54B-CB380BAB478B}</Project>
+      <Name>product_trmm_21</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_22.vcxproj">
+      <Project>{8F964B65-B5FF-38A1-8C7A-21F6CC9D318F}</Project>
+      <Name>product_trmm_22</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_23.vcxproj">
+      <Project>{02B017FE-BDF3-3475-B1CF-911A386490F6}</Project>
+      <Name>product_trmm_23</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_24.vcxproj">
+      <Project>{1B75DCF0-2E5C-3138-907B-2E9FDCCCDAB6}</Project>
+      <Name>product_trmm_24</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_31.vcxproj">
+      <Project>{784B47EC-1868-3C86-B200-33BA886B1D56}</Project>
+      <Name>product_trmm_31</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_32.vcxproj">
+      <Project>{46ED5794-5348-3FCC-B66B-0D9576BDCF1D}</Project>
+      <Name>product_trmm_32</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_33.vcxproj">
+      <Project>{2DCC63D1-0946-339E-A798-457DE52B04B8}</Project>
+      <Name>product_trmm_33</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmm_34.vcxproj">
+      <Project>{3F9D52B0-20DE-3679-9DA5-D2A712F933C9}</Project>
+      <Name>product_trmm_34</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmv_1.vcxproj">
+      <Project>{EAA237B9-4563-306C-B6BD-F251458E3608}</Project>
+      <Name>product_trmv_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmv_2.vcxproj">
+      <Project>{6E6988ED-6ABE-3087-BB8F-CB923960B795}</Project>
+      <Name>product_trmv_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmv_3.vcxproj">
+      <Project>{F106CE3A-F484-38AD-9C87-D9BB234B1644}</Project>
+      <Name>product_trmv_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmv_4.vcxproj">
+      <Project>{3CF9BDF6-CB8D-3360-B345-9FDC1F5D199B}</Project>
+      <Name>product_trmv_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmv_5.vcxproj">
+      <Project>{1E4C6BB1-B3BF-335B-83EC-9C69CE59EEAC}</Project>
+      <Name>product_trmv_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trmv_6.vcxproj">
+      <Project>{90E73086-02F4-362F-A9E1-FAD801862148}</Project>
+      <Name>product_trmv_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_1.vcxproj">
+      <Project>{4F428190-7946-3B9A-809B-B0D679620CAF}</Project>
+      <Name>product_trsolve_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_10.vcxproj">
+      <Project>{B222D2A6-3E30-3D0B-9480-1D9B7DA3A7B5}</Project>
+      <Name>product_trsolve_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_11.vcxproj">
+      <Project>{72533201-5C31-3E5A-90F0-BCF2125E0680}</Project>
+      <Name>product_trsolve_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_12.vcxproj">
+      <Project>{6BFB2272-1DEE-3555-A70E-CF9D127BD447}</Project>
+      <Name>product_trsolve_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_13.vcxproj">
+      <Project>{27ED5E12-89C1-33F3-8B34-9B286937169B}</Project>
+      <Name>product_trsolve_13</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_14.vcxproj">
+      <Project>{7148F38D-A806-3255-A338-A5D551ACABBC}</Project>
+      <Name>product_trsolve_14</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_2.vcxproj">
+      <Project>{C30C8C40-94FF-3217-9EE8-44EE222D1B32}</Project>
+      <Name>product_trsolve_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_3.vcxproj">
+      <Project>{74DF8256-C942-3A71-965B-DDA5BFDB7C1C}</Project>
+      <Name>product_trsolve_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_4.vcxproj">
+      <Project>{4078F5C4-1AAA-320E-A40D-984B423F35FB}</Project>
+      <Name>product_trsolve_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_5.vcxproj">
+      <Project>{1E759A69-6429-3F4E-B9E0-59A6ED877EA7}</Project>
+      <Name>product_trsolve_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_6.vcxproj">
+      <Project>{73B6F069-3FF8-3FAF-BE65-07FF71B72DE6}</Project>
+      <Name>product_trsolve_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_7.vcxproj">
+      <Project>{2D8A3D18-5A59-3E1E-BADE-FCF8FED95BFD}</Project>
+      <Name>product_trsolve_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_8.vcxproj">
+      <Project>{6AD00FFB-F1BB-3890-A6C6-63F31FE6FB9D}</Project>
+      <Name>product_trsolve_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\product_trsolve_9.vcxproj">
+      <Project>{72E6386A-C8AA-3DB4-8FA1-48721E7B6E5C}</Project>
+      <Name>product_trsolve_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_1.vcxproj">
+      <Project>{30BD75E4-1C89-32B8-9ECF-A9ED7D42F8EE}</Project>
+      <Name>qr_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_10.vcxproj">
+      <Project>{61E78E2B-3691-33C1-B06B-C9AC37462A88}</Project>
+      <Name>qr_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_11.vcxproj">
+      <Project>{90E326D9-9A2C-37D3-A175-434F364102FC}</Project>
+      <Name>qr_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_12.vcxproj">
+      <Project>{04D63DE9-EF57-39A6-9BDE-6A915EEC237C}</Project>
+      <Name>qr_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_2.vcxproj">
+      <Project>{28623114-01C2-3090-9D2E-359568DBAF10}</Project>
+      <Name>qr_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_3.vcxproj">
+      <Project>{74FC8D97-B401-381B-B8E0-FE95AE366586}</Project>
+      <Name>qr_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_4.vcxproj">
+      <Project>{E1130B35-0E79-3FF2-93D7-5C493F1A6CEB}</Project>
+      <Name>qr_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_5.vcxproj">
+      <Project>{C412B0ED-FEEC-3CE8-BF66-FDF1C236AD8A}</Project>
+      <Name>qr_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_6.vcxproj">
+      <Project>{BA847A52-4CC9-3BE1-B145-11FA6C7B909D}</Project>
+      <Name>qr_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_7.vcxproj">
+      <Project>{1744059C-4E88-3211-9DAD-89BCCA63FE0D}</Project>
+      <Name>qr_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_8.vcxproj">
+      <Project>{6BD1C15D-4212-357A-95EA-92E66312071F}</Project>
+      <Name>qr_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_9.vcxproj">
+      <Project>{48B79AF9-EAAC-3D54-8492-6175E08B0E15}</Project>
+      <Name>qr_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_colpivoting_1.vcxproj">
+      <Project>{756FE18E-C8D6-3791-9E69-3AAE13E79472}</Project>
+      <Name>qr_colpivoting_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_colpivoting_2.vcxproj">
+      <Project>{7B78034E-25E5-385E-B9FD-AAF93423D813}</Project>
+      <Name>qr_colpivoting_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_colpivoting_3.vcxproj">
+      <Project>{8FDB8F5F-C14B-3A89-BE94-708F7D2C8967}</Project>
+      <Name>qr_colpivoting_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_colpivoting_4.vcxproj">
+      <Project>{EDBBEAB7-0451-3568-901A-B26F71CADC3E}</Project>
+      <Name>qr_colpivoting_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_colpivoting_5.vcxproj">
+      <Project>{CD457559-DF59-31BA-AFC4-8BD9FF2870F9}</Project>
+      <Name>qr_colpivoting_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_colpivoting_6.vcxproj">
+      <Project>{1C6343AE-3BA6-305E-B0FF-D5AD739D405F}</Project>
+      <Name>qr_colpivoting_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_colpivoting_7.vcxproj">
+      <Project>{A71F8F20-3656-3A85-A5C0-E21D4A54C91D}</Project>
+      <Name>qr_colpivoting_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_colpivoting_8.vcxproj">
+      <Project>{98D844CD-140B-3330-A117-FF9757338AAE}</Project>
+      <Name>qr_colpivoting_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_colpivoting_9.vcxproj">
+      <Project>{B79DB182-CBD1-36E5-B93D-F0D2005C71C3}</Project>
+      <Name>qr_colpivoting_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_fullpivoting_1.vcxproj">
+      <Project>{008BA91D-32FB-37EE-8E40-D98C81A050E8}</Project>
+      <Name>qr_fullpivoting_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_fullpivoting_2.vcxproj">
+      <Project>{A5FA4A75-992C-344B-9637-4FE4AD88C6E2}</Project>
+      <Name>qr_fullpivoting_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_fullpivoting_3.vcxproj">
+      <Project>{4FB1BA33-96F1-321C-9DA2-ED421CB7E506}</Project>
+      <Name>qr_fullpivoting_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_fullpivoting_4.vcxproj">
+      <Project>{515146B4-B42F-37E5-AA9D-5520D74BD509}</Project>
+      <Name>qr_fullpivoting_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_fullpivoting_5.vcxproj">
+      <Project>{53F2F627-827E-3FB0-88B2-17E7C350367A}</Project>
+      <Name>qr_fullpivoting_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_fullpivoting_6.vcxproj">
+      <Project>{9D516335-F1EC-30DD-A3C8-149E7D671868}</Project>
+      <Name>qr_fullpivoting_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\qr_fullpivoting_7.vcxproj">
+      <Project>{CCCEEB60-5CA1-3FA1-81FC-DE343995DECB}</Project>
+      <Name>qr_fullpivoting_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\rand.vcxproj">
+      <Project>{ECEAC7E6-55F5-34D7-86E3-D792B105F8E7}</Project>
+      <Name>rand</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\real_qz_1.vcxproj">
+      <Project>{235EEFDF-A027-32C5-9728-95C3E1E89DBB}</Project>
+      <Name>real_qz_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\real_qz_2.vcxproj">
+      <Project>{639244F4-9294-3B2E-8BA1-B52BED02A30B}</Project>
+      <Name>real_qz_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\real_qz_3.vcxproj">
+      <Project>{91C483D6-5970-331B-B062-FC6DC303AD60}</Project>
+      <Name>real_qz_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\real_qz_4.vcxproj">
+      <Project>{C39297B8-3245-32B6-A30F-72B9D7661D86}</Project>
+      <Name>real_qz_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\redux_1.vcxproj">
+      <Project>{41AFE4B3-0FBD-3B20-9846-80C4D9A5F576}</Project>
+      <Name>redux_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\redux_2.vcxproj">
+      <Project>{97EC78D8-0B31-353B-8B6D-3D4CAF9A781F}</Project>
+      <Name>redux_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\redux_3.vcxproj">
+      <Project>{1E5F923E-BC55-3CA6-A53E-13C6F7AF88B8}</Project>
+      <Name>redux_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\redux_4.vcxproj">
+      <Project>{F6A7C238-C4FC-3682-A990-C0802DB3A9C5}</Project>
+      <Name>redux_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\redux_5.vcxproj">
+      <Project>{DBD0A7BB-055E-3CF6-948A-C2C7D8D38BDF}</Project>
+      <Name>redux_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\redux_6.vcxproj">
+      <Project>{4E0397AA-390B-35D6-89A5-FC6484AFC0D9}</Project>
+      <Name>redux_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\redux_7.vcxproj">
+      <Project>{4CF52597-8E0D-3339-A502-B817F457F1AF}</Project>
+      <Name>redux_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\redux_8.vcxproj">
+      <Project>{0EA5B3AD-6628-3B55-AEF5-EA98374B019C}</Project>
+      <Name>redux_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\ref_1.vcxproj">
+      <Project>{1E4A80D8-852C-3BD5-A74E-8FB099674D96}</Project>
+      <Name>ref_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\ref_2.vcxproj">
+      <Project>{4366685A-D47D-3D38-8C42-23B87E9EE4C7}</Project>
+      <Name>ref_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\ref_3.vcxproj">
+      <Project>{A8D9CD9A-0517-3AF0-8DBC-FA049C157337}</Project>
+      <Name>ref_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\ref_4.vcxproj">
+      <Project>{084F57BB-6086-3978-B658-DE2CEFEC8FD7}</Project>
+      <Name>ref_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\ref_5.vcxproj">
+      <Project>{8A5FE92C-D146-301B-A64F-6A2BC9A45987}</Project>
+      <Name>ref_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\ref_6.vcxproj">
+      <Project>{64898AA1-13D1-31F4-8C25-527BF38CB80E}</Project>
+      <Name>ref_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\ref_7.vcxproj">
+      <Project>{1C91D968-DB9C-3F80-BC5C-5887D2356775}</Project>
+      <Name>ref_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\resize.vcxproj">
+      <Project>{14244EDB-CD6B-3C96-B587-896BB1AAFA11}</Project>
+      <Name>resize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\rvalue_types_1.vcxproj">
+      <Project>{3DAE6B54-BF8D-30C7-84E9-FE42ECF5C0AE}</Project>
+      <Name>rvalue_types_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\rvalue_types_2.vcxproj">
+      <Project>{745FD94A-8AE9-37E9-8BF1-1A19A03D1D6B}</Project>
+      <Name>rvalue_types_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\schur_complex_1.vcxproj">
+      <Project>{E7E81F09-7A00-3B58-A47E-0CF1551162DA}</Project>
+      <Name>schur_complex_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\schur_complex_2.vcxproj">
+      <Project>{5D0D12DE-D1ED-3B09-8E79-120C7C796276}</Project>
+      <Name>schur_complex_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\schur_complex_3.vcxproj">
+      <Project>{D2CC8220-09CE-3160-9DFF-0A1A5C20700D}</Project>
+      <Name>schur_complex_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\schur_complex_4.vcxproj">
+      <Project>{FC7E5EEA-9B7A-37AF-A21D-8450034C4378}</Project>
+      <Name>schur_complex_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\schur_complex_5.vcxproj">
+      <Project>{AA1A2C62-1273-34AF-8D0A-92D4A4F80B46}</Project>
+      <Name>schur_complex_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\schur_real_1.vcxproj">
+      <Project>{6265C42B-1FB5-3BED-8259-59EAE0781902}</Project>
+      <Name>schur_real_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\schur_real_2.vcxproj">
+      <Project>{F29842DB-FE41-32D9-BAB3-A2935984DC0A}</Project>
+      <Name>schur_real_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\schur_real_3.vcxproj">
+      <Project>{6F7C9D5C-1BC1-3954-A5C9-ED55F0DF22E3}</Project>
+      <Name>schur_real_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\schur_real_4.vcxproj">
+      <Project>{90CD4BAC-3D33-3401-9DD8-BCA54A6340AB}</Project>
+      <Name>schur_real_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\schur_real_5.vcxproj">
+      <Project>{FCC28FCC-C388-33BC-9B1E-3B33FA5FB807}</Project>
+      <Name>schur_real_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\selfadjoint_1.vcxproj">
+      <Project>{B9EF8458-3072-3223-8748-A7A228A0B2B6}</Project>
+      <Name>selfadjoint_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\selfadjoint_2.vcxproj">
+      <Project>{B13433DA-E035-32CE-90A8-29EDEE2833A1}</Project>
+      <Name>selfadjoint_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\selfadjoint_3.vcxproj">
+      <Project>{F7BF4E13-738C-3910-93A3-E0E406764CCD}</Project>
+      <Name>selfadjoint_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\selfadjoint_4.vcxproj">
+      <Project>{9F38B3E6-A61E-3E84-AEBB-0264C3100A9D}</Project>
+      <Name>selfadjoint_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\selfadjoint_5.vcxproj">
+      <Project>{074EAA49-B9B1-338E-B718-99982F0EE370}</Project>
+      <Name>selfadjoint_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\simplicial_cholesky_1.vcxproj">
+      <Project>{2610E13A-6C42-32CF-B08D-06E81EDB20B9}</Project>
+      <Name>simplicial_cholesky_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\simplicial_cholesky_2.vcxproj">
+      <Project>{90363A9C-5ECE-3FD4-8214-4FE6F90F1D54}</Project>
+      <Name>simplicial_cholesky_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\simplicial_cholesky_3.vcxproj">
+      <Project>{189F6260-D2A7-3297-8631-BD921B5E94EF}</Project>
+      <Name>simplicial_cholesky_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sizeof.vcxproj">
+      <Project>{C8976B63-1994-37F5-9DDE-454404201646}</Project>
+      <Name>sizeof</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sizeoverflow.vcxproj">
+      <Project>{A52CEC00-0482-3B06-A786-EE2B6D3F3CA0}</Project>
+      <Name>sizeoverflow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\smallvectors.vcxproj">
+      <Project>{CB464925-AAD2-3BD1-ADDB-D89449EA4460}</Project>
+      <Name>smallvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_basic_1.vcxproj">
+      <Project>{DF737450-5FFE-360D-BF19-59A4A8134E30}</Project>
+      <Name>sparse_basic_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_basic_2.vcxproj">
+      <Project>{AFEE2A93-6946-31A3-A662-CA3C908FD9AF}</Project>
+      <Name>sparse_basic_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_basic_3.vcxproj">
+      <Project>{0F46BA5E-4E0D-34D2-B86D-2D0D87B764AE}</Project>
+      <Name>sparse_basic_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_basic_4.vcxproj">
+      <Project>{73A3BFAD-C2A1-325C-80A5-0186BD261B0D}</Project>
+      <Name>sparse_basic_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_basic_5.vcxproj">
+      <Project>{D3287051-1E0E-3A67-A220-7E8AC2674781}</Project>
+      <Name>sparse_basic_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_basic_6.vcxproj">
+      <Project>{FA870CAA-A3FC-328F-9D75-50CB565672DE}</Project>
+      <Name>sparse_basic_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_basic_7.vcxproj">
+      <Project>{4D4CE6F6-35D5-3665-A6E1-80A5450D8B0C}</Project>
+      <Name>sparse_basic_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_block_1.vcxproj">
+      <Project>{75779D01-FF0E-3048-9F1C-1371E62F7185}</Project>
+      <Name>sparse_block_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_block_2.vcxproj">
+      <Project>{0DB520C9-FFD2-31C3-9723-FB41C49B3D2F}</Project>
+      <Name>sparse_block_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_block_3.vcxproj">
+      <Project>{ACA6CBFC-5FA5-3152-A7B9-897A84F893C5}</Project>
+      <Name>sparse_block_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_block_4.vcxproj">
+      <Project>{2FFDD067-5DD7-3B62-BA69-12F66C514C88}</Project>
+      <Name>sparse_block_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_permutations_1.vcxproj">
+      <Project>{3E1525D6-0376-3F83-B195-6CB428D9E381}</Project>
+      <Name>sparse_permutations_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_permutations_2.vcxproj">
+      <Project>{31CF33E2-772C-33AD-B9F4-C1EA71A0D065}</Project>
+      <Name>sparse_permutations_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_product_1.vcxproj">
+      <Project>{E9ACDAC5-6B50-387B-BB15-1A1FD831B0A5}</Project>
+      <Name>sparse_product_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_product_2.vcxproj">
+      <Project>{FCEE53AA-E96A-3DB3-9D8C-5DABAE9C1D72}</Project>
+      <Name>sparse_product_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_product_3.vcxproj">
+      <Project>{2F895182-6A92-3BB1-9C84-6A8D3CE60373}</Project>
+      <Name>sparse_product_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_product_4.vcxproj">
+      <Project>{BF36D7FB-D6A9-358F-8AF2-F38237B52FCC}</Project>
+      <Name>sparse_product_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_product_5.vcxproj">
+      <Project>{EE4BF8F0-0F0D-33F5-A8CA-379481D6B94F}</Project>
+      <Name>sparse_product_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_ref_1.vcxproj">
+      <Project>{3F2E7B3F-CA72-3042-A54D-255AC51AD06B}</Project>
+      <Name>sparse_ref_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_ref_2.vcxproj">
+      <Project>{77CB32D7-7F59-3504-AE4F-26A7DE2FD038}</Project>
+      <Name>sparse_ref_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_ref_3.vcxproj">
+      <Project>{18955199-2A85-37C6-85C3-840D22516192}</Project>
+      <Name>sparse_ref_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_solvers_1.vcxproj">
+      <Project>{8C31D3E5-C882-3830-B6C8-C55CD1980AF9}</Project>
+      <Name>sparse_solvers_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_solvers_2.vcxproj">
+      <Project>{1A56D817-A33C-399A-B954-2F828394EDBE}</Project>
+      <Name>sparse_solvers_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_vector_1.vcxproj">
+      <Project>{7E3EEC30-7051-362B-9AE4-7F9954B7E83F}</Project>
+      <Name>sparse_vector_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparse_vector_2.vcxproj">
+      <Project>{C546F229-D964-3532-8A01-60B744CA5638}</Project>
+      <Name>sparse_vector_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparselu_1.vcxproj">
+      <Project>{389992BD-40AE-3E4E-9CC3-C934B07BED82}</Project>
+      <Name>sparselu_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparselu_2.vcxproj">
+      <Project>{5F5FFF9F-FB4B-3C7C-9E91-4C79190FE8DE}</Project>
+      <Name>sparselu_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparselu_3.vcxproj">
+      <Project>{4CD2413E-E7A5-35D9-9B3B-506FCD1356C9}</Project>
+      <Name>sparselu_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparselu_4.vcxproj">
+      <Project>{73B6DB84-6FA9-3BA2-B349-FA420D638933}</Project>
+      <Name>sparselu_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparseqr_1.vcxproj">
+      <Project>{AD6DCF7F-D1B2-3E2E-9F7F-E299099CFCE6}</Project>
+      <Name>sparseqr_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\sparseqr_2.vcxproj">
+      <Project>{ED2AE305-7E53-310F-A738-1441105AAE65}</Project>
+      <Name>sparseqr_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\special_numbers_1.vcxproj">
+      <Project>{3F079F9B-723B-38BA-89BA-A49A15AD5ADF}</Project>
+      <Name>special_numbers_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stable_norm_1.vcxproj">
+      <Project>{AF89C720-8AD8-3784-A6E6-14B955546ACF}</Project>
+      <Name>stable_norm_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stable_norm_2.vcxproj">
+      <Project>{6370BABC-FE7F-343E-ACBB-5C7E9DEE49A7}</Project>
+      <Name>stable_norm_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stable_norm_3.vcxproj">
+      <Project>{D310D43E-1589-35A6-AE3B-50A1223CB119}</Project>
+      <Name>stable_norm_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stable_norm_4.vcxproj">
+      <Project>{154B919B-BBEF-3CD9-8E42-E5E55A24D693}</Project>
+      <Name>stable_norm_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stable_norm_5.vcxproj">
+      <Project>{C6896035-E8B8-38A3-8577-56B5E9E67E81}</Project>
+      <Name>stable_norm_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stddeque_1.vcxproj">
+      <Project>{435E504F-BECD-33C4-A17E-C32C98EE922F}</Project>
+      <Name>stddeque_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stddeque_2.vcxproj">
+      <Project>{3DBB4217-E61C-3442-ADEF-5E871505CC34}</Project>
+      <Name>stddeque_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stddeque_3.vcxproj">
+      <Project>{8C98BB55-FBC3-3C3B-A30F-CB889173F04F}</Project>
+      <Name>stddeque_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stddeque_4.vcxproj">
+      <Project>{C9E5B6FE-2882-3FC2-9423-E4268AB42308}</Project>
+      <Name>stddeque_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stddeque_5.vcxproj">
+      <Project>{23B5395B-ACDC-3775-92BF-4ABBB4BC9C7D}</Project>
+      <Name>stddeque_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stddeque_overload_1.vcxproj">
+      <Project>{2EEBF761-D952-3CED-B38E-0C069A04C209}</Project>
+      <Name>stddeque_overload_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stddeque_overload_2.vcxproj">
+      <Project>{5341C96C-A061-3ACD-A72B-7EA4DC291CD3}</Project>
+      <Name>stddeque_overload_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stddeque_overload_3.vcxproj">
+      <Project>{68D45099-437B-3B35-828C-BA6FE052FC98}</Project>
+      <Name>stddeque_overload_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stddeque_overload_4.vcxproj">
+      <Project>{B8CFE142-6B8A-3FA3-85FB-5C669A144908}</Project>
+      <Name>stddeque_overload_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stddeque_overload_5.vcxproj">
+      <Project>{A9F8EFB8-C014-3857-A607-67EC4D79280C}</Project>
+      <Name>stddeque_overload_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdlist_1.vcxproj">
+      <Project>{7F5A9E21-6AA0-3412-8727-A826EDC9332A}</Project>
+      <Name>stdlist_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdlist_2.vcxproj">
+      <Project>{286ECDD6-9818-39AA-91BD-B3E770F25737}</Project>
+      <Name>stdlist_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdlist_3.vcxproj">
+      <Project>{8B0ED2FD-0844-3077-A9B3-EB64CE6F30B2}</Project>
+      <Name>stdlist_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdlist_4.vcxproj">
+      <Project>{1BE77C70-3260-3E39-903B-63596D548BDC}</Project>
+      <Name>stdlist_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdlist_5.vcxproj">
+      <Project>{D86D40A4-566C-3642-AC3C-BA2345334C72}</Project>
+      <Name>stdlist_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdlist_overload_1.vcxproj">
+      <Project>{B6B442DD-CF9B-3576-A691-AF9A88067951}</Project>
+      <Name>stdlist_overload_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdlist_overload_2.vcxproj">
+      <Project>{4E5E0AE6-476F-3A87-8F57-FCA5D3929A3A}</Project>
+      <Name>stdlist_overload_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdlist_overload_3.vcxproj">
+      <Project>{D01F56DD-8FDF-3122-B745-838328422CF4}</Project>
+      <Name>stdlist_overload_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdlist_overload_4.vcxproj">
+      <Project>{39ACF445-3D4B-384D-A81A-762AAF3B63D0}</Project>
+      <Name>stdlist_overload_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdlist_overload_5.vcxproj">
+      <Project>{CD6FAF21-BA72-309B-B7FA-6CEA4596FDDC}</Project>
+      <Name>stdlist_overload_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdvector_1.vcxproj">
+      <Project>{FE24117A-E82A-3951-9AC3-F7671CE6D68A}</Project>
+      <Name>stdvector_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdvector_2.vcxproj">
+      <Project>{2E8B5B30-C66C-308B-9280-F3795620DC7C}</Project>
+      <Name>stdvector_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdvector_3.vcxproj">
+      <Project>{99B704B3-F957-345E-9467-5702A82D447C}</Project>
+      <Name>stdvector_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdvector_4.vcxproj">
+      <Project>{443BB107-5455-3867-8806-844D3EC02AA3}</Project>
+      <Name>stdvector_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdvector_5.vcxproj">
+      <Project>{1154F7CC-E74B-3D63-8190-453C853AB329}</Project>
+      <Name>stdvector_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdvector_overload_1.vcxproj">
+      <Project>{92F87BFB-AB68-380E-8E1E-C88E52364C65}</Project>
+      <Name>stdvector_overload_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdvector_overload_2.vcxproj">
+      <Project>{6C157DEF-D113-32FC-AEB0-29C1AF3318B3}</Project>
+      <Name>stdvector_overload_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdvector_overload_3.vcxproj">
+      <Project>{4FF2EE60-12B8-3CC3-85F9-DF62B217853C}</Project>
+      <Name>stdvector_overload_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdvector_overload_4.vcxproj">
+      <Project>{9828BFA9-0A67-33C1-8DEC-AC253C6D38A0}</Project>
+      <Name>stdvector_overload_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\stdvector_overload_5.vcxproj">
+      <Project>{0AF5B286-B04B-3A12-87DC-E75A74285CA9}</Project>
+      <Name>stdvector_overload_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\swap_1.vcxproj">
+      <Project>{4763446F-CF6F-3191-A152-C0E132515B4C}</Project>
+      <Name>swap_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\swap_2.vcxproj">
+      <Project>{F4232801-9B33-3AC3-8FCC-C32509242D55}</Project>
+      <Name>swap_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\swap_3.vcxproj">
+      <Project>{68C59FB7-5E36-39BE-813C-19DA806FEB75}</Project>
+      <Name>swap_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\swap_4.vcxproj">
+      <Project>{3BD272D3-A61F-3F03-8B2E-AE6EBB769A09}</Project>
+      <Name>swap_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\triangular_1.vcxproj">
+      <Project>{3F5D5A2F-CE6B-3335-9F53-C1F0354D9180}</Project>
+      <Name>triangular_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\triangular_2.vcxproj">
+      <Project>{7241CE65-F984-3B12-865B-6691C4DE8B43}</Project>
+      <Name>triangular_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\triangular_3.vcxproj">
+      <Project>{252D82DD-9ACA-3F2C-AE4E-D9911F982F94}</Project>
+      <Name>triangular_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\triangular_4.vcxproj">
+      <Project>{31A92360-A747-3968-956B-7357AE3B378A}</Project>
+      <Name>triangular_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\triangular_5.vcxproj">
+      <Project>{677D385A-86C7-3730-BAC2-D05A666A22A8}</Project>
+      <Name>triangular_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\triangular_6.vcxproj">
+      <Project>{1C87BDD0-6524-39AA-8BA3-F09190F51677}</Project>
+      <Name>triangular_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\triangular_7.vcxproj">
+      <Project>{C68E1B3D-21DA-333A-B306-317EE650CDC8}</Project>
+      <Name>triangular_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\triangular_8.vcxproj">
+      <Project>{AC5F7A2F-F195-3963-93AF-71273148E360}</Project>
+      <Name>triangular_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\triangular_9.vcxproj">
+      <Project>{B306ED17-0B23-3FAD-A669-5D72C748D1D2}</Project>
+      <Name>triangular_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\umeyama_1.vcxproj">
+      <Project>{44F00AD9-0C1A-36C7-95FB-D0CA7EE110E4}</Project>
+      <Name>umeyama_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\umeyama_2.vcxproj">
+      <Project>{ADE6B5BA-11DE-356D-BBD3-E1027A90D9F2}</Project>
+      <Name>umeyama_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\umeyama_3.vcxproj">
+      <Project>{CE27EFFC-7989-3B92-AA31-DA68FCCEE615}</Project>
+      <Name>umeyama_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\umeyama_4.vcxproj">
+      <Project>{D38D6645-6212-31DE-8290-05B4C24A15B1}</Project>
+      <Name>umeyama_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\umeyama_5.vcxproj">
+      <Project>{0E3477E0-F99E-37F3-A65C-3A7CEECB4B4E}</Project>
+      <Name>umeyama_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\umeyama_6.vcxproj">
+      <Project>{40B237C5-E4E3-39BE-AD58-9BF105CE7B65}</Project>
+      <Name>umeyama_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\umeyama_7.vcxproj">
+      <Project>{67CE308B-0436-3DBE-89AE-3D0E7AA63531}</Project>
+      <Name>umeyama_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\umeyama_8.vcxproj">
+      <Project>{7B2B0B32-E3C1-3711-8ADF-5F5CC0A6BC25}</Project>
+      <Name>umeyama_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\unalignedassert_1.vcxproj">
+      <Project>{3B13B74F-DA28-3FF8-8666-32D57F9FC846}</Project>
+      <Name>unalignedassert_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\unalignedassert_2.vcxproj">
+      <Project>{48FA89AE-2641-379B-A1F9-CF4451B8A521}</Project>
+      <Name>unalignedassert_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\unalignedassert_3.vcxproj">
+      <Project>{43717B24-A777-38D7-9DC0-B5F4F917DBC8}</Project>
+      <Name>unalignedassert_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\unalignedassert_4.vcxproj">
+      <Project>{7FD28667-12CD-3935-8A4B-D1B5B858E713}</Project>
+      <Name>unalignedassert_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\unalignedcount.vcxproj">
+      <Project>{156A4871-5A8B-3FB4-9AE5-0194F5158D91}</Project>
+      <Name>unalignedcount</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\upperbidiagonalization_1.vcxproj">
+      <Project>{13CDE4CD-A8D7-36CE-A03F-5C71145A53E8}</Project>
+      <Name>upperbidiagonalization_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\upperbidiagonalization_2.vcxproj">
+      <Project>{F0378B3E-C27B-3D9C-B4C7-FC049F8BD167}</Project>
+      <Name>upperbidiagonalization_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\upperbidiagonalization_3.vcxproj">
+      <Project>{C6A1D9EC-B878-3DB2-8B9C-17BE54EDA40F}</Project>
+      <Name>upperbidiagonalization_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\upperbidiagonalization_4.vcxproj">
+      <Project>{10649FC6-69F9-36C8-A885-53EEFBC36F8D}</Project>
+      <Name>upperbidiagonalization_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\upperbidiagonalization_5.vcxproj">
+      <Project>{CD9F4FE6-127C-3C78-B17D-987C8C274DC4}</Project>
+      <Name>upperbidiagonalization_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\upperbidiagonalization_6.vcxproj">
+      <Project>{BD40A1EF-4302-33BD-BEDB-E7047715C00E}</Project>
+      <Name>upperbidiagonalization_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\upperbidiagonalization_7.vcxproj">
+      <Project>{1102FCAD-9BB2-3545-A8A5-0E43692D8C62}</Project>
+      <Name>upperbidiagonalization_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\vectorization_logic_1.vcxproj">
+      <Project>{5BFE4198-8C9F-3E76-8AD8-3F5D41768624}</Project>
+      <Name>vectorization_logic_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\vectorization_logic_2.vcxproj">
+      <Project>{38FD578B-0016-3286-BE2A-AA89B1DBABFF}</Project>
+      <Name>vectorization_logic_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\vectorwiseop_1.vcxproj">
+      <Project>{CEE043C5-1918-3578-BF77-900DD00CDBC0}</Project>
+      <Name>vectorwiseop_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\vectorwiseop_2.vcxproj">
+      <Project>{F9AD0A32-AA8D-3392-8987-8FBF53411F88}</Project>
+      <Name>vectorwiseop_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\vectorwiseop_3.vcxproj">
+      <Project>{494B81AB-6CEB-324A-86AB-4AC9D462C37E}</Project>
+      <Name>vectorwiseop_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\vectorwiseop_4.vcxproj">
+      <Project>{840FD55D-18F5-358C-9A43-DC7583EB3F78}</Project>
+      <Name>vectorwiseop_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\vectorwiseop_5.vcxproj">
+      <Project>{9CA694E2-CE3C-36F2-BD5E-5F8B84D6C112}</Project>
+      <Name>vectorwiseop_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\vectorwiseop_6.vcxproj">
+      <Project>{2E223383-8309-3AE8-A656-1FC666E9612D}</Project>
+      <Name>vectorwiseop_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\vectorwiseop_7.vcxproj">
+      <Project>{5A707AA8-A7E6-3B48-ABB2-5A0B738E16BD}</Project>
+      <Name>vectorwiseop_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\visitor_1.vcxproj">
+      <Project>{87EE4B5D-4D8D-3FEE-8B45-89131F3F7DA9}</Project>
+      <Name>visitor_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\visitor_10.vcxproj">
+      <Project>{DD51A7B1-A21A-38DB-BB00-ABD5D41344AC}</Project>
+      <Name>visitor_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\visitor_2.vcxproj">
+      <Project>{1C867481-0844-3795-87EC-20C1871D44A6}</Project>
+      <Name>visitor_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\visitor_3.vcxproj">
+      <Project>{B4F7D635-2B3F-3F2B-B058-10E40BE956A6}</Project>
+      <Name>visitor_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\visitor_4.vcxproj">
+      <Project>{9CFB975B-3085-36E3-A6DD-9D51D281C581}</Project>
+      <Name>visitor_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\visitor_5.vcxproj">
+      <Project>{57457365-E192-3183-89EC-D6F1A29B12C6}</Project>
+      <Name>visitor_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\visitor_6.vcxproj">
+      <Project>{C47D135E-B966-31B7-9168-2E132303CCD8}</Project>
+      <Name>visitor_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\visitor_7.vcxproj">
+      <Project>{20AA16EB-2697-3067-9F9B-C289AAAFCFD0}</Project>
+      <Name>visitor_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\visitor_8.vcxproj">
+      <Project>{60A59D62-47C6-350C-9AC9-8A8230DB0133}</Project>
+      <Name>visitor_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\visitor_9.vcxproj">
+      <Project>{1041D0E9-FDCC-3956-9AC9-454B76C8E65F}</Project>
+      <Name>visitor_9</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\test\zerosized.vcxproj">
+      <Project>{3464998C-0172-3531-831A-CD4AC6FCFCE4}</Project>
+      <Name>zerosized</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

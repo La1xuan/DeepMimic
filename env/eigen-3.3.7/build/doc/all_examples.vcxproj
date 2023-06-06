@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{59847EC6-5DA9-3670-A24A-CE67B1746943}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>all_examples</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc;C:\GitRepos\DeepMimic\eigen-3.3.7\doc;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc;C:\GitRepos\DeepMimic\eigen-3.3.7\doc;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc;C:\GitRepos\DeepMimic\eigen-3.3.7\doc;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc;C:\GitRepos\DeepMimic\eigen-3.3.7\doc;C:\GitRepos\DeepMimic\eigen-3.3.7;C:\GitRepos\DeepMimic\eigen-3.3.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GitRepos\DeepMimic\eigen-3.3.7\doc\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\doc\Doxyfile.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_footer.html.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_header.html.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_layout.xml.in;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\doc\Doxyfile.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_footer.html.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_header.html.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_layout.xml.in;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\doc\Doxyfile.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_footer.html.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_header.html.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_layout.xml.in;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/GitRepos/DeepMimic/eigen-3.3.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitRepos/DeepMimic/eigen-3.3.7 -BC:/GitRepos/DeepMimic/eigen-3.3.7/build --check-stamp-file C:/GitRepos/DeepMimic/eigen-3.3.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\doc\Doxyfile.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_footer.html.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_header.html.in;C:\GitRepos\DeepMimic\eigen-3.3.7\doc\eigendoxy_layout.xml.in;C:\GitRepos\DeepMimic\eigen-3.3.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\ZERO_CHECK.vcxproj">
+      <Project>{EFEA8FAC-BB9B-3250-9DBD-FC51A1D450F6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\CustomizingEigen_Inheritance.vcxproj">
+      <Project>{42977976-F305-340E-91E7-D4EB3E4503B7}</Project>
+      <Name>CustomizingEigen_Inheritance</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Cwise_erf.vcxproj">
+      <Project>{67BDC520-33B7-3003-8C7D-ED95906A0B03}</Project>
+      <Name>Cwise_erf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Cwise_erfc.vcxproj">
+      <Project>{54F92571-054B-3782-8C40-A4E84A1EE34F}</Project>
+      <Name>Cwise_erfc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Cwise_lgamma.vcxproj">
+      <Project>{4F7609E8-ABF6-3CC3-8C2C-5B2AB0C45AA8}</Project>
+      <Name>Cwise_lgamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\DenseBase_middleCols_int.vcxproj">
+      <Project>{B03B7DEF-5DBA-39A7-AFB8-661508929036}</Project>
+      <Name>DenseBase_middleCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\DenseBase_middleRows_int.vcxproj">
+      <Project>{F3D8591A-7CC3-37CE-9466-8AA5DD33E28D}</Project>
+      <Name>DenseBase_middleRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\DenseBase_template_int_middleCols.vcxproj">
+      <Project>{7FEB5AE1-2361-3212-B9B7-E1605AA3918C}</Project>
+      <Name>DenseBase_template_int_middleCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\DenseBase_template_int_middleRows.vcxproj">
+      <Project>{9C62EA47-0D9E-3030-87ED-78D4147FD704}</Project>
+      <Name>DenseBase_template_int_middleRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\QuickStart_example.vcxproj">
+      <Project>{0B1A8E06-93D7-3E17-8335-A13D81BECDB1}</Project>
+      <Name>QuickStart_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\QuickStart_example2_dynamic.vcxproj">
+      <Project>{C7AF69F7-58AE-3347-B664-AB2DC31341E4}</Project>
+      <Name>QuickStart_example2_dynamic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\QuickStart_example2_fixed.vcxproj">
+      <Project>{B94431A0-8BBD-3D5E-A64E-FCD6D961F524}</Project>
+      <Name>QuickStart_example2_fixed</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TemplateKeyword_flexible.vcxproj">
+      <Project>{2E69B0E8-232E-3464-9C37-E54C1CBF9C1A}</Project>
+      <Name>TemplateKeyword_flexible</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TemplateKeyword_simple.vcxproj">
+      <Project>{467A2959-9DF8-355A-A685-1CE99EBB2A97}</Project>
+      <Name>TemplateKeyword_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TutorialInplaceLU.vcxproj">
+      <Project>{93751B6C-2C8F-3237-A79A-FBCC4845E6E0}</Project>
+      <Name>TutorialInplaceLU</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TutorialLinAlgComputeTwice.vcxproj">
+      <Project>{CD1CCB73-DAAF-35D4-97BD-BC776592EC99}</Project>
+      <Name>TutorialLinAlgComputeTwice</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TutorialLinAlgExComputeSolveError.vcxproj">
+      <Project>{29F17FF0-76FB-3769-8119-5CDF55E0F012}</Project>
+      <Name>TutorialLinAlgExComputeSolveError</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TutorialLinAlgExSolveColPivHouseholderQR.vcxproj">
+      <Project>{602C5C79-A566-34CF-8FE7-4FD154003639}</Project>
+      <Name>TutorialLinAlgExSolveColPivHouseholderQR</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TutorialLinAlgExSolveLDLT.vcxproj">
+      <Project>{E9C892F2-4AA0-3152-9520-FC710C2115AB}</Project>
+      <Name>TutorialLinAlgExSolveLDLT</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TutorialLinAlgInverseDeterminant.vcxproj">
+      <Project>{C9CEB0BE-6F77-3192-B056-D1B4ECFFC1D2}</Project>
+      <Name>TutorialLinAlgInverseDeterminant</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TutorialLinAlgRankRevealing.vcxproj">
+      <Project>{DD82772D-7AC7-3816-B30A-5BFE7BB1F353}</Project>
+      <Name>TutorialLinAlgRankRevealing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TutorialLinAlgSVDSolve.vcxproj">
+      <Project>{752CE90E-91FE-36E6-8266-0382F978B33B}</Project>
+      <Name>TutorialLinAlgSVDSolve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TutorialLinAlgSelfAdjointEigenSolver.vcxproj">
+      <Project>{7365B11D-E58E-3E26-B577-D30434DAB52C}</Project>
+      <Name>TutorialLinAlgSelfAdjointEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\TutorialLinAlgSetThreshold.vcxproj">
+      <Project>{2DEC7DAF-9442-360F-8CE2-01C9309DB3B7}</Project>
+      <Name>TutorialLinAlgSetThreshold</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ArrayClass_accessors.vcxproj">
+      <Project>{DE903407-4006-3C09-A10B-2B9E33D824BA}</Project>
+      <Name>Tutorial_ArrayClass_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ArrayClass_addition.vcxproj">
+      <Project>{E4972AC0-2CF9-33A6-9394-59D9718388F6}</Project>
+      <Name>Tutorial_ArrayClass_addition</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ArrayClass_cwise_other.vcxproj">
+      <Project>{440369C0-8834-3AAF-96AE-F228BA9BF4FD}</Project>
+      <Name>Tutorial_ArrayClass_cwise_other</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ArrayClass_interop.vcxproj">
+      <Project>{246063F1-3C31-3FCE-BF91-F12A07A36A3E}</Project>
+      <Name>Tutorial_ArrayClass_interop</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ArrayClass_interop_matrix.vcxproj">
+      <Project>{AA1EFEFC-56D1-3BBD-A8C5-C64D050428BA}</Project>
+      <Name>Tutorial_ArrayClass_interop_matrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ArrayClass_mult.vcxproj">
+      <Project>{C6428D48-C98D-3757-867B-956BAE791F3A}</Project>
+      <Name>Tutorial_ArrayClass_mult</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_BlockOperations_block_assignment.vcxproj">
+      <Project>{20493C8E-211C-3978-964B-4FDEFC1A015A}</Project>
+      <Name>Tutorial_BlockOperations_block_assignment</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_BlockOperations_colrow.vcxproj">
+      <Project>{6D780F0C-BEBB-3368-BE02-53EE5C785100}</Project>
+      <Name>Tutorial_BlockOperations_colrow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_BlockOperations_corner.vcxproj">
+      <Project>{B6F0BBB5-54E9-382F-9B63-33CB59102ED0}</Project>
+      <Name>Tutorial_BlockOperations_corner</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_BlockOperations_print_block.vcxproj">
+      <Project>{881E0115-0795-39F4-B691-AD4828130F41}</Project>
+      <Name>Tutorial_BlockOperations_print_block</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_BlockOperations_vector.vcxproj">
+      <Project>{F8B5CA97-1DE9-3E75-8140-B800CE380483}</Project>
+      <Name>Tutorial_BlockOperations_vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_PartialLU_solve.vcxproj">
+      <Project>{71C0F35D-5C53-31DD-B0D6-ED0C31D78677}</Project>
+      <Name>Tutorial_PartialLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn.vcxproj">
+      <Project>{FFA9B71A-07D7-3792-A46D-6DEB562D3E3A}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple.vcxproj">
+      <Project>{3B89F4F1-097A-3894-B352-0751BCB1F5EF}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise.vcxproj">
+      <Project>{14A80735-C389-3835-B7E8-54F2979FB8E1}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_colwise.vcxproj">
+      <Project>{0672CC6F-5C58-3B06-80B2-CBB3D346F611}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_colwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_maxnorm.vcxproj">
+      <Project>{3336EBD4-AC4E-3397-BC28-E7B12F6219EE}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_maxnorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_bool.vcxproj">
+      <Project>{CCBF987A-9254-3821-88AF-C568BE5FAA47}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_bool</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_norm.vcxproj">
+      <Project>{66BDFA72-F6FE-3F94-9B6A-C1EB93390708}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_norm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm.vcxproj">
+      <Project>{335D3421-4A56-3A2C-9B4F-FD3B130ADEA2}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_rowwise.vcxproj">
+      <Project>{18BA8EF1-B535-33F0-92B3-9EFCC7A99BF9}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_visitors.vcxproj">
+      <Project>{9AB8DE62-492C-3F9B-ADC8-ECBB601B4AC5}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_visitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_simple_example_dynamic_size.vcxproj">
+      <Project>{C12E572E-E53F-3816-8204-884A4FA1484A}</Project>
+      <Name>Tutorial_simple_example_dynamic_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\Tutorial_simple_example_fixed_size.vcxproj">
+      <Project>{B8F628AD-DAE7-3F0F-B66F-0E555E72334F}</Project>
+      <Name>Tutorial_simple_example_fixed_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\class_Block.vcxproj">
+      <Project>{2A3F054E-7F34-3284-B10B-D7C735A200C9}</Project>
+      <Name>class_Block</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\class_CwiseBinaryOp.vcxproj">
+      <Project>{C550DDC5-B186-3C9D-AFF8-ADE162A19190}</Project>
+      <Name>class_CwiseBinaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\class_CwiseUnaryOp.vcxproj">
+      <Project>{472641A8-51DA-3EBC-88C7-ACAE77E5A329}</Project>
+      <Name>class_CwiseUnaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\class_CwiseUnaryOp_ptrfun.vcxproj">
+      <Project>{9FDCFFE4-2BF8-336C-B673-B0870A7318C2}</Project>
+      <Name>class_CwiseUnaryOp_ptrfun</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\class_FixedBlock.vcxproj">
+      <Project>{2F8AB0D0-9667-34B0-9678-0DEF766E481B}</Project>
+      <Name>class_FixedBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\class_FixedVectorBlock.vcxproj">
+      <Project>{7ED2610E-5A03-346C-B7CC-3518EC6633F6}</Project>
+      <Name>class_FixedVectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\class_VectorBlock.vcxproj">
+      <Project>{24BA0398-C889-3DC2-8123-E1BA3ACB4D35}</Project>
+      <Name>class_VectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\function_taking_eigenbase.vcxproj">
+      <Project>{EF300991-03BB-3574-B9CF-6D9589FB2206}</Project>
+      <Name>function_taking_eigenbase</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\function_taking_ref.vcxproj">
+      <Project>{433C639E-9EAF-3864-8737-48B7AA65AF5C}</Project>
+      <Name>function_taking_ref</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\make_circulant.vcxproj">
+      <Project>{32CB60CD-3727-3740-9907-F292B7A086DC}</Project>
+      <Name>make_circulant</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\make_circulant2.vcxproj">
+      <Project>{1778307A-E99F-3110-948A-8D9D822C59B1}</Project>
+      <Name>make_circulant2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\matrixfree_cg.vcxproj">
+      <Project>{9FD40C2D-1DFC-3388-B9FA-ACCAC98449CA}</Project>
+      <Name>matrixfree_cg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\nullary_indexing.vcxproj">
+      <Project>{BAB99F6C-88B0-3706-8551-506F3331276A}</Project>
+      <Name>nullary_indexing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\tut_arithmetic_add_sub.vcxproj">
+      <Project>{F439111B-BF49-3F31-9561-193B6E01BB30}</Project>
+      <Name>tut_arithmetic_add_sub</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\tut_arithmetic_dot_cross.vcxproj">
+      <Project>{80E456D1-C5A3-3BA3-B257-FC17D02F052C}</Project>
+      <Name>tut_arithmetic_dot_cross</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\tut_arithmetic_matrix_mul.vcxproj">
+      <Project>{D16D206C-2F35-399E-B19E-60986C186B99}</Project>
+      <Name>tut_arithmetic_matrix_mul</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\tut_arithmetic_redux_basic.vcxproj">
+      <Project>{9A8BD7AE-A259-32AB-B0C4-8E246D239609}</Project>
+      <Name>tut_arithmetic_redux_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\tut_arithmetic_scalar_mul_div.vcxproj">
+      <Project>{C3DADCB5-AAFA-34A4-98A8-4493B85A6C26}</Project>
+      <Name>tut_arithmetic_scalar_mul_div</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\tut_matrix_coefficient_accessors.vcxproj">
+      <Project>{2A75C0A6-BD06-3EEC-AC9E-1B991776A2EF}</Project>
+      <Name>tut_matrix_coefficient_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\tut_matrix_resize.vcxproj">
+      <Project>{B9393E4E-81BE-3EDC-8701-105477848996}</Project>
+      <Name>tut_matrix_resize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitRepos\DeepMimic\eigen-3.3.7\build\doc\examples\tut_matrix_resize_fixed_size.vcxproj">
+      <Project>{472E61C4-9F59-3F93-AD19-BC16515D665B}</Project>
+      <Name>tut_matrix_resize_fixed_size</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

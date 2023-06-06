@@ -4,6 +4,13 @@
 /* Put header files here or function declarations like below */
 #include <vector>
 
+//wangyi
+std::string pfix = "";
+#ifdef WANGYI_PATH_PREFIX
+	pfix = "C:/GitRepos/DeepMimic/";
+#endif
+//wangyi end
+
 #include "DeepMimicCore.h"
 %}
  

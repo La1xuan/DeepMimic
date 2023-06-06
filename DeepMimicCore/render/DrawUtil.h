@@ -16,7 +16,8 @@ public:
 		eDrawSolid,
 		eDrawWire,
 		eDrawWireSimple,
-		eDrawMax
+		eDrawMax,
+		eDrawBoxOnly
 	};
 
 	static void EnableDraw(bool enable);
