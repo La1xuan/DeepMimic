@@ -335,12 +335,13 @@ void cDrawUtil::DrawLine(const tVector& a, const tVector& b)
 	attr_info.mNumComp = cMeshUtil::gPosDim;
 	gLineMesh->LoadVBuffer(attr_info.mAttribNumber, sizeof(float) * pos_len, (GLubyte*)pos_data, 0, 1, &attr_info);
 
-	gLineMesh->Draw(GL_LINES);
+	//gLineMesh->Draw(GL_LINES);
 }
 
 void cDrawUtil::DrawLineStrip(const tVectorArr& pts)
 {
 	int num_pts = static_cast<int>(pts.size());
+
 	glBegin(GL_LINE_STRIP);
 	for (int i = 0; i < num_pts - 1; ++i)
 	{
@@ -354,6 +355,7 @@ void cDrawUtil::DrawLineStrip(const tVectorArr& pts)
 
 void cDrawUtil::DrawStrip(const tVector& a, const tVector& b, double width, eDrawMode draw_mode)
 {
+
 	tVector delta = b - a;
 	tVector orthogonal = tVector(-delta[1], delta[0], 0, 0);
 	orthogonal.normalize();
@@ -378,6 +380,7 @@ void cDrawUtil::DrawCross(const tVector& pos, double size)
 
 void cDrawUtil::DrawSphere(double r, eDrawMode draw_mode)
 {
+	
 	cDrawUtil::PushMatrixView();
 	cDrawUtil::Scale(tVector(r, r, r, 1));
 

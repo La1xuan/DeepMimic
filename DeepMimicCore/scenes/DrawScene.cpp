@@ -3,7 +3,7 @@
 #include "render/DrawUtil.h"
 
 // camera attributes
-const tVector gCameraPosition = tVector(0, 0, 30, 0);
+const tVector gCameraPosition = tVector(0, 0, 10, 0);
 const tVector gCameraFocus = tVector(gCameraPosition[0], gCameraPosition[1], 0.0, 0.0);
 const tVector gCameraUp = tVector(0, 1, 0, 0);
 

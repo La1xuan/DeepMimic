@@ -1,0 +1,1 @@
+C:\Python3.7\python.exe DeepMimic.py --arg_file args/run_humanoid3d_run_args.txt
